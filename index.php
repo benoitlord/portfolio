@@ -20,9 +20,6 @@
 	
 	<!-- Pour calls to action -->
 	<script src="js/calls_to_action.js"></script>
-	
-	<!-- Pour messages à Jalily -->
-	<script src="js/msg.js"></script>
 </head>
 <body>
     <!-- Contenu de la page -->
@@ -160,50 +157,5 @@
     	include("include/nav.php");
 		include("include/bouton_haut.php");
 	?>
-	
-	<!-- Pour messages à Jalily -->
-	<div class="msg">
-		<i class="fa fa-dashboard fa-2x bouton-msg"></i>
-		
-		<h2>Bonjour Mme Dionne !</h2>
-		<p>Dernière modification de mon portfolio: 10 mai 2018</p>
-		<p>Voici les modifications effectuées: </p>
-		<ul>
-			<li>Correction d'un bogue dans le script qui fait en sorte d'ajouter la langue dans l'adresse du site</li>
-		</ul>
-		<a href="changements.php" class="nouvelonglet" target="_blank">Voir les autres modifications</a>
-		<h3>Envoyez-moi vos commentaires :</h3>
-		<form action="#" method="post">
-			<textarea name="comment" cols="40" rows="15"></textarea><br />
-			<input type="submit" value="Envoyer" name="msg-submit">
-		</form>
-		<?php
-		if(isset($_POST["msg-submit"])){
-			if(!empty($_POST["comment"])){
-				$headers = "Content-Type: text/html\n" .
-					   "From: Portfolio <nepasrepondre@benoit-lord.com>\n" .
-					   'MIME-Version: 1.0' . "\n";
-				
-				$message = "
-				<h1>Commentaire de Jalily</h1>
-				<p>Voici le commentaire : </p>
-				<p><i>
-					" . nl2br($_POST["comment"]) . "
-				</i></p>
-				";
-				
-				if(mail("benoitlord98@outlook.com", "Commentaire de Jalily", $message, $headers)){
-					echo "<br>Commentaire envoyé";
-				}
-				else{
-					echo "<br>Une erreur est survenue";
-				}
-			}
-			else{
-				echo "<br>Veuillez entrer un commentaire";
-			}
-		}
-	?>
-	</div>
 </body>
 </html>
