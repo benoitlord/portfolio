@@ -74,7 +74,7 @@
 					<h3><?php echo $_GET["lang"] == "fr" ? "Création d'images" : ($_GET["lang"] == "en" ? "Image Creation" : ""); ?></h3>
 				</div>
 				<div class="service">
-					<i class="fa fa-5x fa-pencil-square"></i>
+					<i class="fa fa-5x fa-object-group"></i>
 					<h3><?php echo $_GET["lang"] == "fr" ? "Design graphique" : ($_GET["lang"] == "en" ? "Graphic Design" : ""); ?></h3>
 				</div>
 				<div class="service">

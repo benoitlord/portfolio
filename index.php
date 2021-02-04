@@ -36,10 +36,10 @@
 					<span class="description-slide">
 						<?php echo $_GET["lang"] == "fr" ? "Programmeur" : ($_GET["lang"] == "en" ? "Programmer" : ""); ?>
 						<a class="bouton desktop" href="portfolio.php" style="float: right;">
-							Voir mes projets <i class="fa fa-chevron-right"></i>
+							<?php echo $_GET["lang"] == "fr" ? "Voir mes projets" : ($_GET["lang"] == "en" ? "See my projects" : ""); ?> <i class="fa fa-chevron-right"></i>
 						</a>
 						<a class="bouton tablet" href="portfolio.php" style="float: right;">
-							Voir mes projets <i class="fa fa-chevron-right"></i>
+							<?php echo $_GET["lang"] == "fr" ? "Voir mes projets" : ($_GET["lang"] == "en" ? "See my projects" : ""); ?> <i class="fa fa-chevron-right"></i>
 						</a>
 					</span>
 					<img src="img/code-slider-desktop.png" class="desktop" alt="<?php echo $_GET["lang"] == "fr" ? "Programmation" : ($_GET["lang"] == "en" ? "Programming" : ""); ?>">
@@ -50,10 +50,10 @@
 					<span class="description-slide">
 						<?php echo $_GET["lang"] == "fr" ? "Designer web" : ($_GET["lang"] == "en" ? "Web Designer" : ""); ?>
 						<a class="bouton desktop" href="portfolio.php" style="float: right;">
-							Voir mes projets <i class="fa fa-chevron-right"></i>
+							<?php echo $_GET["lang"] == "fr" ? "Voir mes projets" : ($_GET["lang"] == "en" ? "See my projects" : ""); ?> <i class="fa fa-chevron-right"></i>
 						</a>
 						<a class="bouton tablet" href="portfolio.php" style="float: right;">
-							Voir mes projets <i class="fa fa-chevron-right"></i>
+							<?php echo $_GET["lang"] == "fr" ? "Voir mes projets" : ($_GET["lang"] == "en" ? "See my projects" : ""); ?> <i class="fa fa-chevron-right"></i>
 						</a>
 					</span>
 					<img src="img/design-slider-desktop.png" class="desktop" alt="<?php echo $_GET["lang"] == "fr" ? "Design web" : ($_GET["lang"] == "en" ? "Web Design" : ""); ?>">
@@ -64,10 +64,10 @@
 					<span class="description-slide">
 						<?php echo $_GET["lang"] == "fr" ? "Designer graphique" : ($_GET["lang"] == "en" ? "Graphic Designer" : ""); ?>
 						<a class="bouton desktop" href="portfolio.php" style="float: right;">
-							Voir mes projets <i class="fa fa-chevron-right"></i>
+							<?php echo $_GET["lang"] == "fr" ? "Voir mes projets" : ($_GET["lang"] == "en" ? "See my projects" : ""); ?> <i class="fa fa-chevron-right"></i>
 						</a>
 						<a class="bouton tablet" href="portfolio.php" style="float: right;">
-							Voir mes projets <i class="fa fa-chevron-right"></i>
+							<?php echo $_GET["lang"] == "fr" ? "Voir mes projets" : ($_GET["lang"] == "en" ? "See my projects" : ""); ?> <i class="fa fa-chevron-right"></i>
 						</a>
 					</span>
 					<img src="img/graphic-design-slider-desktop.png" class="desktop" alt="<?php echo $_GET["lang"] == "fr" ? "Design graphique" : ($_GET["lang"] == "en" ? "Graphic Design" : ""); ?>">

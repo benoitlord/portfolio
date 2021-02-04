@@ -28,6 +28,13 @@ $(document).ready(function(){
 	});
 
 		// Pour afficher les différents overlays quand on clique sur le projet correspondant
+	$(".img-gallerie").keydown(function(evt){
+		console.log(evt.keyCode);
+		if(evt.keyCode == 13){
+			$(this).click();
+		}
+	});
+	
 	$('#section1 .img-gallerie').click(function(){
 		var classes = $(this).attr('class').split(/\s+/);
 		var classe;
@@ -91,6 +98,30 @@ $(document).ready(function(){
 		
 		if($(".section3.projet" + num).hasClass("changeImage")){
 			startImageChange($(".section3.projet" + num + " img"), $(".section3.projet" + num).data("images"));
+		}
+
+		$("body").on('scroll touchmove mousewheel', function(e){
+			e.preventDefault();
+			e.stopPropagation();
+			return false;
+		});
+	});
+	
+	$('#section4 .img-gallerie').click(function(){
+		var classes = $(this).attr('class').split(/\s+/);
+		var classe;
+		$.each(classes, function(index){
+			if(classes[index].indexOf("vers-projet") >= 0){
+				classe = classes[index];
+			}
+		});
+		var num = classe.substr(classe.lastIndexOf("t") + 1);
+
+		$('.black-overlay').addClass("visible");
+		$('.section4.projet' + num).prepareTransition().addClass("visible");
+		
+		if($(".section4.projet" + num).hasClass("changeImage")){
+			startImageChange($(".section4.projet" + num + " img"), $(".section4.projet" + num).data("images"));
 		}
 
 		$("body").on('scroll touchmove mousewheel', function(e){
@@ -227,7 +258,7 @@ $(document).ready(function(){
 	});
 
 	//Compteur de sections
-	$('.compteur .section1, .compteur .section2, .compteur .section3').hover(
+	$('.compteur .section1, .compteur .section2, .compteur .section3, .compteur .section4').hover(
 		function(){
 			var num = trouverBulle($(this));
 
@@ -240,7 +271,7 @@ $(document).ready(function(){
 		}
 	);
 
-	$('.compteur .section1, .compteur .section2, .compteur .section3').click(function(){
+	$('.compteur .section1, .compteur .section2, .compteur .section3, .compteur .section4').click(function(){
 		var num = trouverBulle($(this));
 
 		$("body, html").stop().animate({scrollTop: $('#section' + num).offset().top}, 1000, "easeOutQuint", function(){
@@ -267,7 +298,7 @@ var couleurCounter = 0;
 function afficherCouleur(){
 	"use strict";
 	if(couleurCounter === 1){
-		$('.compteur .section1, .compteur .section2, .compteur .section3').css({backgroundColor: "#ddd"});
+		$('.compteur .section1, .compteur .section2, .compteur .section3, .compteur .section4').css({backgroundColor: "#ddd"});
 
 		if($(window).scrollTop()+30 >= $('#section1').offset().top && $(window).scrollTop()+30 < $('#section2').offset().top){
 			$('.compteur .section1').css({backgroundColor: "#bbb"});
@@ -275,8 +306,11 @@ function afficherCouleur(){
 		else if($(window).scrollTop()+30 >= $('#section2').offset().top && $(window).scrollTop()+30 < $('#section3').offset().top){
 			$('.compteur .section2').css({backgroundColor: "#bbb"});
 		}
-		else if($(window).scrollTop()+30 >= $('#section3').offset().top){
+		else if($(window).scrollTop()+30 >= $('#section3').offset().top && $(window).scrollTop()+30 < $('#section4').offset().top){
 			$('.compteur .section3').css({backgroundColor: "#bbb"});
+		}
+		else if($(window).scrollTop()+30 >= $('#section4').offset().top){
+			$('.compteur .section4').css({backgroundColor: "#bbb"});
 		}
 	}
 	else if(couleurCounter === 5){

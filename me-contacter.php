@@ -62,7 +62,7 @@
 					<p><strong>Message:</strong> </p>
 					<p><i>$message</i></p>";
 				
-					if(mail("info@benoit-lord.com", "Courriel de Portfolio", $msg, $headers)){
+					if(mail("info@benoit-lord.ca", "Courriel de Portfolio", $msg, $headers)){
 						if($_GET["lang"] == "fr"){
 							echo "<p class='alerte'>Votre message a été envoyé.</p>";
 						}
@@ -100,7 +100,7 @@
 		<div class="droite">
 			<h2><?php echo $_GET["lang"] == "fr" ? "Autres informations" : ($_GET["lang"] == "en" ? "Other informations" : ""); ?></h2>
 			<p><i class="fa fa-phone contact-infos"></i> (819) 351-8521</p>
-			<p><i class="fa fa-envelope contact-infos"></i> <a href="mailto:info@benoit-lord.com" class="pas-effet">info@benoit-lord.com</a></p>
+			<p><i class="fa fa-envelope contact-infos"></i> <a href="mailto:info@benoit-lord.ca" class="pas-effet">info@benoit-lord.ca</a></p>
 		</div>
         
         <!-- Réseaux sociaux et CV -->

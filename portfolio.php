@@ -37,7 +37,7 @@
   			<ul>
     			<li><img data-src="img/vision-slider-desktop.jpg" class="desktop" alt="Petite École Vision"><img data-src="img/vision-slider-tablet.jpg" class="tablet-slider" alt="Petite École Vision"><img data-src="img/vision-slider-phone.jpg" class="phone" alt="Petite École Vision"></li>
 				<li><img data-src="img/app-slider-desktop.jpg" class="desktop" alt="BB-8"><img data-src="img/app-slider-tablet.jpg" class="tablet-slider" alt="BB-8"><img data-src="img/app-slider-phone.jpg" class="phone" alt="BB-8"></li>
-    			<li><img data-src="img/affichage-slider-desktop.jpg" class="desktop" alt="Affichage Mural"><img data-src="img/affichage-slider-tablet.jpg" class="tablet-slider" alt="Affichage Mural"><img data-src="img/affichage-slider-phone.jpg" class="phone" alt="Affichage Mural"></li>
+    			<li><img data-src="img/affiche_typo-slider-desktop.jpg" class="desktop" alt="Affichage Mural"><img data-src="img/affiche_typo-slider-tablet.jpg" class="tablet-slider" alt="Affichage Mural"><img data-src="img/affiche_typo-slider-phone.jpg" class="phone" alt="Affichage Mural"></li>
     			<li><img data-src="img/bb-8-slider-desktop.png" class="desktop" alt="BB-8"><img data-src="img/bb-8-slider-tablet.png" class="tablet-slider" alt="BB-8"><img data-src="img/bb-8-slider-phone.png" class="phone" alt="BB-8"></li>
   			</ul>  
 		</div>
@@ -50,91 +50,103 @@
         	<h2><?php echo $_GET["lang"] == "fr" ? "Sites web et programmation" : ($_GET["lang"] == "en" ? "Websites and Programming" : ""); ?></h2>
         	
         	<!-- Images de la gallerie -->
-			<div class="img-gallerie fadeout site-1 vers-projet1">
+			<div class="img-gallerie fadeout site-1 vers-projet1" tabindex="0">
 				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Cours en ligne pour l'École de la fonction publique du Canada" : ($_GET["lang"] == "en" ? "Online courses for the Canada School of Public Service" : ""); ?></span></div>
         	</div>
 			
-			<div class="img-gallerie fadeout site-2 vers-projet2">
+			<div class="img-gallerie fadeout site-2 vers-projet2" tabindex="0">
 				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Intranet de la garderie Vision" : ($_GET["lang"] == "en" ? "Intranet for the Vision daycare" : ""); ?></span></div>
         	</div>
 			
-			<div class="img-gallerie fadeout site-3 vers-projet3">
+			<div class="img-gallerie fadeout site-3 vers-projet3" tabindex="0">
 				<div class="overlay"><span class="desc-overlay">GuitarBox</span></div>
         	</div>
 			
-			<div class="img-gallerie fadeout site-4 vers-projet4">
-				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Site web pour Manon Bureau" : ($_GET["lang"] == "en" ? "Website for Manon Bureau" : ""); ?></span></div>
-        	</div>
+			<!--<div class="img-gallerie fadeout site-4 vers-projet4" tabindex="0">
+				<div class="overlay"><span class="desc-overlay"><?php //echo $_GET["lang"] == "fr" ? "Site web pour Manon Bureau" : ($_GET["lang"] == "en" ? "Website for Manon Bureau" : ""); ?></span></div>
+        	</div>-->
 			
-			<div class="img-gallerie fadeout site-5 vers-projet5">
-				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Site web pour Affichage Mural" : ($_GET["lang"] == "en" ? "Website for Affichage Mural" : ""); ?></span></div>
+			<!--<div class="img-gallerie fadeout site-5 vers-projet5" tabindex="0">
+				<div class="overlay"><span class="desc-overlay"><?php //echo $_GET["lang"] == "fr" ? "Site web pour Affichage Mural" : ($_GET["lang"] == "en" ? "Website for Affichage Mural" : ""); ?></span></div>
+			</div>-->
+		</div>
+		
+		<div id="section2">
+			<h2><?php echo $_GET["lang"] == "fr" ? "Design graphique" : ($_GET["lang"] == "en" ? "Graphic design and illustrations" : ""); ?></h2>
+			
+			<!-- Images de la gallerie -->
+			<div class="img-gallerie fadeout design-1 vers-projet1" tabindex="0">
+				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Portrait typographique" : ($_GET["lang"] == "en" ? "Typographic portrait" : ""); ?></span></div>
+        	</div>
+			<div class="img-gallerie fadeout design-2 vers-projet2" tabindex="0">
+				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Design de t-shirts" : ($_GET["lang"] == "en" ? "T-shirts design" : ""); ?></span></div>
+        	</div>
+			<div class="img-gallerie fadeout design-3 vers-projet3" tabindex="0">
+				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Zoomorphisme" : ($_GET["lang"] == "en" ? "Zoomorphism" : ""); ?></span></div>
+        	</div>
+			<div class="img-gallerie fadeout design-4 vers-projet4" tabindex="0">
+				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Logo d'une compagnie fictive" : ($_GET["lang"] == "en" ? "Logo for a fictive company" : ""); ?></span></div>
         	</div>
 		</div>
        
        <!-- Section des illustrations -->
-        <div id="section2">
+        <div id="section3">
         	<h2><?php echo $_GET["lang"] == "fr" ? "Illustrations" : ($_GET["lang"] == "en" ? "Illustrations" : ""); ?></h2>
         	
         	<!-- Images de la gallerie -->
-			<div class="img-gallerie fadeout illustration-1 vers-projet1">
+			<div class="img-gallerie fadeout illustration-1 vers-projet1" tabindex="0">
 				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Illustrations de Star Wars" : ($_GET["lang"] == "en" ? "Star Wars illustrations" : ""); ?></span></div>
         	</div>
-        	<div class="img-gallerie fadeout illustration-2 vers-projet2">
+        	<div class="img-gallerie fadeout illustration-2 vers-projet2" tabindex="0">
 				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Animation des Avengers" : ($_GET["lang"] == "en" ? "Animation of The Avengers" : ""); ?></span></div>
         	</div>
-        	<div class="img-gallerie fadeout illustration-3 vers-projet3">
+        	<div class="img-gallerie fadeout illustration-3 vers-projet3" tabindex="0">
 				<div class="overlay"><span class="desc-overlay">Batman</span></div>
         	</div>
-        	<div class="img-gallerie fadeout illustration-4 vers-projet4">
+        	<div class="img-gallerie fadeout illustration-4 vers-projet4" tabindex="0">
 				<div class="overlay"><span class="desc-overlay">Flash</span></div>
         	</div>
-        	<div class="img-gallerie fadeout illustration-5 vers-projet5">
+        	<div class="img-gallerie fadeout illustration-5 vers-projet5" tabindex="0">
 				<div class="overlay"><span class="desc-overlay">Green Arrow</span></div>
         	</div>
-        	<div class="img-gallerie fadeout illustration-6 vers-projet6">
+        	<div class="img-gallerie fadeout illustration-6 vers-projet6" tabindex="0">
 				<div class="overlay"><span class="desc-overlay">Harry Potter</span></div>
         	</div>
-        	<div class="img-gallerie fadeout illustration-7 vers-projet7">
+        	<div class="img-gallerie fadeout illustration-7 vers-projet7" tabindex="0">
 				<div class="overlay"><span class="desc-overlay">Ron Weasley</span></div>
         	</div>
-        	<div class="img-gallerie fadeout illustration-8 vers-projet8">
+        	<div class="img-gallerie fadeout illustration-8 vers-projet8" tabindex="0">
 				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Logo de Gryffondor" : ($_GET["lang"] == "en" ? "Gryffindor Logo" : ""); ?></span></div>
         	</div>
-        	<div class="img-gallerie fadeout illustration-9 vers-projet9">
+        	<div class="img-gallerie fadeout illustration-9 vers-projet9" tabindex="0">
 				<div class="overlay"><span class="desc-overlay">Lord Voldemort</span></div>
         	</div>
-        	<div class="img-gallerie fadeout illustration-10 vers-projet10">
+        	<div class="img-gallerie fadeout illustration-10 vers-projet10" tabindex="0">
 				<div class="overlay"><span class="desc-overlay">Jacob Frye</span></div>
         	</div>
-        	<div class="img-gallerie fadeout illustration-11 vers-projet11">
+        	<div class="img-gallerie fadeout illustration-11 vers-projet11" tabindex="0">
 				<div class="overlay"><span class="desc-overlay">Master Chief</span></div>
         	</div>
-        	<div class="img-gallerie fadeout illustration-12 vers-projet12">
+        	<div class="img-gallerie fadeout illustration-12 vers-projet12" tabindex="0">
 				<div class="overlay"><span class="desc-overlay">Super Mario</span></div>
 			</div>
 		</div>
       	
        <!-- Section autre -->
-        <div id="section3">
+        <div id="section4">
         	<h2><?php echo $_GET["lang"] == "fr" ? "Autres" : ($_GET["lang"] == "en" ? "Others" : ""); ?></h2>
         	
         	<!-- Images de la gallerie -->
-        	<div class="img-gallerie fadeout projet-1 vers-projet1">
+        	<div class="img-gallerie fadeout projet-1 vers-projet1" tabindex="0">
 				<div class="overlay"><span class="desc-overlay"><em>Enter Sandman</em></span></div>
         	</div>
-        	<div class="img-gallerie fadeout projet-2 vers-projet2">
-				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Zoomorphisme" : ($_GET["lang"] == "en" ? "Zoomorphism" : ""); ?></span></div>
-        	</div>
-        	<div class="img-gallerie fadeout projet-3 vers-projet3">
+        	<div class="img-gallerie fadeout projet-2 vers-projet2" tabindex="0">
 				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Générique de série télé fictive" : ($_GET["lang"] == "en" ? "Credits for a fictive TV series" : ""); ?></span></div>
         	</div>
-        	<div class="img-gallerie fadeout projet-4 vers-projet4">
-				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Logo d'une compagnie fictive" : ($_GET["lang"] == "en" ? "Logo for a fictive company" : ""); ?></span></div>
-        	</div>
-			<div class="img-gallerie fadeout projet-5 vers-projet5">
+			<div class="img-gallerie fadeout projet-3 vers-projet3" tabindex="0">
 				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Affichages muraux" : ($_GET["lang"] == "en" ? "Wall displays" : ""); ?></span></div>
         	</div>
-			<div class="img-gallerie fadeout projet-6 vers-projet6">
+			<div class="img-gallerie fadeout projet-4 vers-projet4" tabindex="0">
 				<div class="overlay"><span class="desc-overlay"><?php echo $_GET["lang"] == "fr" ? "Réaction en chaîne" : ($_GET["lang"] == "en" ? "Chained reaction" : ""); ?></span></div>
         	</div>
         </div>
@@ -185,42 +197,94 @@
 		<img data-src="img/app-tablet<?php if($_GET["lang"] == "en") echo "_en"; ?>_1.jpg" class="tablet" alt="Site 2">
 		<img data-src="img/app-phone<?php if($_GET["lang"] == "en") echo "_en"; ?>_1.jpg" class="phone" alt="Site 2">
 		<p>
-			<?php echo $_GET["lang"] == "fr" ? "J’ai créé cette application pour iOS qui offre différents outils utiles pour un guitariste. Je l'ai créée grâce au langage de programmation Swift et à l’outil Xcode, le tout pour apprendre par moi-même à créer une application pour mobile. Elle est disponible sur l'App Store d'Apple. Téléchargez-là en cliquant sur le lien ci-bas pour m'encourager !" : ($_GET["lang"] == "en" ? "I created this iOS app that offers a handful of tools useful for guitarists. I programmed it using the Swift programming language and Xcode, to learn by myself about mobile apps development. It is availbable to download on Apple's App Store. Download it using the link below to encourage me!" : ""); ?>
+			<?php echo $_GET["lang"] == "fr" ? "J’ai créé cette application pour iOS qui offre différents outils utiles pour un guitariste. Je l'ai créée grâce au langage de programmation Swift et à l’outil Xcode, le tout pour apprendre par moi-même à créer une application pour mobile. Elle est disponible sur l'App Store d'Apple. Apprenez-en plus en visitant le <a href='http://guitarbox.ca/?lang=fr' class='nouvelonglet' target='_blank'>guitarbox.ca</a> et téléchargez l'application en cliquant sur le lien ci-bas pour m'encourager !" : ($_GET["lang"] == "en" ? "I created this iOS app that offers a handful of tools useful for guitarists. I programmed it using the Swift programming language and Xcode, to learn by myself about mobile apps development. It is available to download on Apple's App Store. Learn more by visiting <a href='http://guitarbox.ca/?lang=en' class='nouvelonglet' target='_blank'>guitarbox.ca</a> and download the app using the link below to encourage me!" : ""); ?>
 		</p>
 		<a href="https://itunes.apple.com/ca/app/guitarbox/id1320296077?l=<?php echo $_GET["lang"] == "fr" ? "fr" : ($_GET["lang"] == "en" ? "en" : ""); ?>&mt=8" target="_blank" class="nouvelonglet"><img src="img/download_app_store-<?php echo $_GET["lang"] == "fr" ? "fr" : ($_GET["lang"] == "en" ? "en" : ""); ?>.png" alt="<?php echo $_GET["lang"] == "fr" ? "Télécharger sur l'App Store" : ($_GET["lang"] == "en" ? "Download on the App Store" : ""); ?>" style="margin: 0;"></a>
 		<span class="next"><i class="fa fa-chevron-right fa-2x"></i></span>
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
 	</div>
-	<div class="projet section1 projet4">
-		<h1><?php echo $_GET["lang"] == "fr" ? "Site web pour Manon Bureau" : ($_GET["lang"] == "en" ? "Website for Manon Bureau" : ""); ?></h1>
+	<!--<div class="projet section1 projet4">
+		<h1><?php //echo $_GET["lang"] == "fr" ? "Site web pour Manon Bureau" : ($_GET["lang"] == "en" ? "Website for Manon Bureau" : ""); ?></h1>
 		<img data-src="img/site_piano_desktop.jpg" class="desktop" alt="Site 3">
 		<img data-src="img/site_piano_tablet.jpg" class="tablet" alt="Site 3">
 		<img data-src="img/site_piano_phone.jpg" class="phone" alt="Site 3">
 		<p>
-			<?php echo $_GET["lang"] == "fr" ? "Ceci est un site que j’ai programmé à l’aide du framework Bootstrap, pour ma mère, qui est professeure de piano. J’ai moi-même créé tout le site et les images qu’il contient. Vous pouvez le visiter à l’adresse suivante :" : ($_GET["lang"] == "en" ? "This is a website I programmed with the Bootstrap framework for my mother's piano classes. I created the entire website as well as all images in it. You can visit it at the following address: " : ""); ?> 
+			<?php //echo $_GET["lang"] == "fr" ? "Ceci est un site que j’ai programmé à l’aide du framework Bootstrap, pour ma mère, qui est professeure de piano. J’ai moi-même créé tout le site et les images qu’il contient. Vous pouvez le visiter ici :" : ($_GET["lang"] == "en" ? "This is a website I programmed with the Bootstrap framework for my mother's piano classes. I created the entire website as well as all images in it. You can visit it here: " : ""); ?> 
 		</p>
-		<a href="http://www.manonbureaupiano.ca" target="_blank" class="nouvelonglet">www.manonbureaupiano.ca</a>
+		<a href="http://piano.benoit-lord.ca" target="_blank" class="nouvelonglet"><?php //echo $_GET["lang"] == "fr" ? "Visiter le site" : ($_GET["lang"] == "en" ? "Visit the site" : ""); ?></a>
 		<span class="next"><i class="fa fa-chevron-right fa-2x"></i></span>
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
-	</div>
-	<div class="projet section1 projet5">
-		<h1><?php echo $_GET["lang"] == "fr" ? "Site web pour Affichage Mural" : ($_GET["lang"] == "en" ? "Website for Affichage Mural" : ""); ?></h1>
+	</div>-->
+	<!--<div class="projet section1 projet5">
+		<h1><?php //echo $_GET["lang"] == "fr" ? "Site web pour Affichage Mural" : ($_GET["lang"] == "en" ? "Website for Affichage Mural" : ""); ?></h1>
 		<img data-src="img/affichage-desktop.png" class="desktop" alt="Site 4">
 		<img data-src="img/affichage-tablet.png" class="tablet" alt="Site 4">
 		<img data-src="img/affichage-phone.png" class="phone" alt="Site 4">
 		<p>
-			<?php echo $_GET["lang"] == "fr" ? "Ceci est un site que j’ai créé dans le cadre d'un cours pour la compagnie Affichage Mural à l'aide WordPress et du thème Divi. Durant ce cours j'ai pu compétitionner avec mes collègues de classe pour créer ce qui aurait pu devenir le site officiel de la compagnie. Vous pouvez voir ce site ci-dessous." : ($_GET["lang"] == "en" ? "This is a website I created during a school class for Affichage Mural, a wall display company, with WordPress and the Divi theme. During this class, I had the chance to compete with my classmates to created what would become the company's official website. You can see my website below." : ""); ?>
+			<?php //echo $_GET["lang"] == "fr" ? "Ceci est un site que j’ai créé dans le cadre d'un cours pour la compagnie Affichage Mural à l'aide WordPress et du thème Divi. Durant ce cours j'ai pu compétitionner avec mes collègues de classe pour créer ce qui aurait pu devenir le site officiel de la compagnie. Vous pouvez voir ce site ci-dessous." : ($_GET["lang"] == "en" ? "This is a website I created during a school class for Affichage Mural, a wall display company, with WordPress and the Divi theme. During this class, I had the chance to compete with my classmates to created what would become the company's official website. You can see my website below." : ""); ?>
 		</p>
-		<a href="http://affichage.benoit-lord.com" target="_blank" class="nouvelonglet">affichage.benoit-lord.com</a>
+		<a href="http://affichage.benoit-lord.ca" target="_blank" class="nouvelonglet">affichage.benoit-lord.ca</a>
+		<span class="next"><i class="fa fa-chevron-right fa-2x"></i></span>
+		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
+		<i class="fa fa-3x fa-times-circle"></i>
+	</div>-->
+	
+	<!-- Section Design -->
+	<div class="projet section2 projet1">
+		<h1><?php echo $_GET["lang"] == "fr" ? "Portrait typographique de Matthew Carter" : ($_GET["lang"] == "en" ? "Typographic portrait of Matthew Carter" : ""); ?></h1>
+		<img data-src="img/affiche_typo-desktop.png" class="desktop" alt="Portrait typographique de Matthew Carter">
+		<img data-src="img/affiche_typo-tablet.png" class="tablet" alt="Portrait typographique de Matthew Carter">
+		<img data-src="img/affiche_typo-phone.png" class="phone" alt="Portrait typographique de Matthew Carter">
+		<p>
+			<?php echo $_GET["lang"] == "fr" ? "Dans le cadre d'un projet scolaire, j'ai réalisé ce portrait typographique du célèbre typographe Matthew Carter. Il représente ses polices les plus connues ainsi que son apport à la typographie moderne" : ($_GET["lang"] == "en" ? "For a school work, I created this typographic portrait of famous typograph Matthew Carter. It represents his most known fonts as well as his contribution to modern typography." : ""); ?>
+		</p>
+		<span class="next"><i class="fa fa-chevron-right fa-2x"></i></span>
+		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
+		<i class="fa fa-3x fa-times-circle"></i>
+	</div>
+	<div class="projet section2 projet2 changeImage" data-images="5">
+		<h1><?php echo $_GET["lang"] == "fr" ? "Design de t-shirts" : ($_GET["lang"] == "en" ? "T-shirts design" : ""); ?></h1>
+		<img data-src="img/t-shirts-desktop_1.jpg" class="desktop" alt="Design de t-shirts">
+		<img data-src="img/t-shirts-tablet_1.jpg" class="tablet" alt="Design de t-shirts">
+		<img data-src="img/t-shirts-phone_1.jpg" class="phone" alt="Design de t-shirts">
+		<p>
+			<?php echo $_GET["lang"] == "fr" ? "J'ai réalisé cette série de designs de t-shirts pour un cours. Chaque t-shirt représente une expression québécoise connue de façon imagée. Vous pouvez même vous les procurer via le site web zazzle.ca en cliquant sur le lien ci-bas!" : ($_GET["lang"] == "en" ? "I created this series of t-shirts designs for a class. Each represents a expression from Quebec that is shown through the illustrations. You can buy them through the website Zazzle.ca by clicking on the link below!" : ""); ?>
+		</p>
+		<a class="bouton nouvelonglet" target="_blank" href="https://www.zazzle.ca/benoit_lord?lang=<?php echo $_GET["lang"]; ?>&rf=238306235092478743&CMPN=share_dblst&social=true" target="_blank"><?php echo $_GET["lang"] == "fr" ? "Acheter" : ($_GET["lang"] == "en" ? "Buy" : ""); ?></a>
+		<a class=""></a>
+		<span class="next"><i class="fa fa-chevron-right fa-2x"></i></span>
+		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
+		<i class="fa fa-3x fa-times-circle"></i>
+	</div>
+	<div class="projet section2 projet3">
+		<h1><?php echo $_GET["lang"] == "fr" ? "Zoomorphisme" : ($_GET["lang"] == "en" ? "Zoomorphism" : ""); ?></h1>
+		<img data-src="img/zoomorphisme-desktop.jpg" class="desktop" alt="<?php echo $_GET["lang"] == "fr" ? "Zoomorphisme" : ($_GET["lang"] == "en" ? "Zoomorphism" : ""); ?>">
+		<img data-src="img/zoomorphisme-tablet.jpg" class="tablet" alt="<?php echo $_GET["lang"] == "fr" ? "Zoomorphisme" : ($_GET["lang"] == "en" ? "Zoomorphism" : ""); ?>">
+		<img data-src="img/zoomorphisme-phone.jpg" class="phone" alt="<?php echo $_GET["lang"] == "fr" ? "Zoomorphisme" : ($_GET["lang"] == "en" ? "Zoomorphism" : ""); ?>">
+		<p>
+			<?php echo $_GET["lang"] == "fr" ? "Ce projet a été réalisé dans le cadre d'un cours à l'aide d'Adobe Photoshop. Il consiste en la fusion d'une image du guitariste Slash et de celle d'un loup." : ($_GET["lang"] == "en" ? "I created this project in a school class with Adobe Photoshop. Il consists of the fusion of images of guitarist Slash and a wolf." : ""); ?>
+		</p>
+		<span class="next"><i class="fa fa-chevron-right fa-2x"></i></span>
+		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
+		<i class="fa fa-3x fa-times-circle"></i>
+	</div>
+	<div class="projet section2 projet4">
+		<h1><?php echo $_GET["lang"] == "fr" ? "Logo d'une compagnie fictive" : ($_GET["lang"] == "en" ? "Logo for a fictive company" : ""); ?></h1>
+		<img data-src="img/logo-desktop.png" class="desktop" alt="<?php echo $_GET["lang"] == "fr" ? "Logo d'une compagnie fictive" : ($_GET["lang"] == "en" ? "Logo for a fictive company" : ""); ?>">
+		<img data-src="img/logo-tablet.png" class="tablet" alt="<?php echo $_GET["lang"] == "fr" ? "Logo d'une compagnie fictive" : ($_GET["lang"] == "en" ? "Logo for a fictive company" : ""); ?>">
+		<img data-src="img/logo-phone.png" class="phone" alt="<?php echo $_GET["lang"] == "fr" ? "Logo d'une compagnie fictive" : ($_GET["lang"] == "en" ? "Logo for a fictive company" : ""); ?>">
+		<p>
+			<?php echo $_GET["lang"] == "fr" ? "J'ai réalisé ce logo pour la compagnie fictive de camion de restauration Lord's Burgers dans le cadre d'un cours à l'aide d'Adobe Illustrator." : ($_GET["lang"] == "en" ? "I created this logo for the fictive food truck company Lord's Burgers during a class using Adobe Illustrator." : ""); ?>
+		</p>
 		<span class="next"><i class="fa fa-chevron-right fa-2x"></i></span>
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
 	</div>
 	
 	<!-- Section illustrations -->
-	<div class="projet section2 projet1 changeImage" data-images="5">
+	<div class="projet section3 projet1 changeImage" data-images="5">
 		<h1><?php echo $_GET["lang"] == "fr" ? "Illustrations de Star Wars" : ($_GET["lang"] == "en" ? "Star Wars illustrations" : ""); ?></h1>
 		<img data-src="img/star-wars-desktop_1.png" class="desktop" alt="BB-8">
 		<img data-src="img/star-wars-tablet_1.png" class="tablet" alt="BB-8">
@@ -232,7 +296,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
 	</div>
-	<div class="projet section2 projet2">
+	<div class="projet section3 projet2">
 		<h1><?php echo $_GET["lang"] == "fr" ? "Animation des Avengers" : ($_GET["lang"] == "en" ? "Animation of The Avengers" : ""); ?></h1>
 		<img data-src="img/avengers-desktop.gif" class="desktop" alt="Captain America">
 		<img data-src="img/avengers-tablet.gif" class="tablet" alt="Captain America">
@@ -244,7 +308,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
    </div>
-	<div class="projet section2 projet3">
+	<div class="projet section3 projet3">
 		<h1>Batman</h1>
 		<img data-src="img/batman-desktop.png" class="desktop" alt="Batman">
 		<img data-src="img/batman-tablet.png" class="tablet" alt="Batman">
@@ -256,7 +320,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
 	</div>
-	<div class="projet section2 projet4">
+	<div class="projet section3 projet4">
 		<h1>Flash</h1>
 		<img data-src="img/flash-desktop.png" class="desktop" alt="Flash">
 		<img data-src="img/flash-tablet.png" class="tablet" alt="Flash">
@@ -268,7 +332,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
    </div>
-   <div class="projet section2 projet5">
+   <div class="projet section3 projet5">
 		<h1>Green Arrow</h1>
 		<img data-src="img/green-arrow-desktop.png" class="desktop" alt="Green Arrow">
 		<img data-src="img/green-arrow-tablet.png" class="tablet" alt="Green Arrow">
@@ -280,7 +344,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
    </div>
-   <div class="projet section2 projet6">
+   <div class="projet section3 projet6">
 		<h1>Harry Potter</h1>
 		<img data-src="img/harry-potter-desktop.png" class="desktop" alt="Harry Potter">
 		<img data-src="img/harry-potter-tablet.png" class="tablet" alt="Harry Potter">
@@ -292,7 +356,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
    </div>
-   <div class="projet section2 projet7">
+   <div class="projet section3 projet7">
 		<h1>Ron Weasley</h1>
 		<img data-src="img/ron-weasley-desktop.png" class="desktop" alt="Jacob Frye">
 		<img data-src="img/ron-weasley-tablet.png" class="tablet" alt="Jacob Frye">
@@ -304,7 +368,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
    </div>
-   <div class="projet section2 projet8">
+   <div class="projet section3 projet8">
 		<h1><?php echo $_GET["lang"] == "fr" ? "Logo de Gryffondor" : ($_GET["lang"] == "en" ? "Gryffindor Logo" : ""); ?></h1>
 		<img data-src="img/logo-gryffindor-desktop.png" class="desktop" alt="Logo de Gryffondor">
 		<img data-src="img/logo-gryffindor-tablet.png" class="tablet" alt="Logo de Gryffondor">
@@ -316,7 +380,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
    </div>
-   <div class="projet section2 projet9">
+   <div class="projet section3 projet9">
 		<h1>Lord Voldemort</h1>
 		<img data-src="img/lord-voldemort-desktop.png" class="desktop" alt="Lord Voldemort">
 		<img data-src="img/lord-voldemort-tablet.png" class="tablet" alt="Lord Voldemort">
@@ -328,7 +392,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
 	</div>
-	<div class="projet section2 projet10">
+	<div class="projet section3 projet10">
 		<h1>Jacob Frye</h1>
 		<img data-src="img/jacob-frye-desktop.png" class="desktop" alt="Jacob Frye">
 		<img data-src="img/jacob-frye-tablet.png" class="tablet" alt="Jacob Frye">
@@ -340,7 +404,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
 	</div>
-	<div class="projet section2 projet11">
+	<div class="projet section3 projet11">
 		<h1>Master Chief</h1>
 		<img data-src="img/master-chief-desktop.png" class="desktop" alt="Master Chief">
 		<img data-src="img/master-chief-tablet.png" class="tablet" alt="Master Chief">
@@ -352,7 +416,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
    </div>
-   <div class="projet section2 projet12">
+   <div class="projet section3 projet12">
 		<h1>Super Mario</h1>
 		<img data-src="img/super-mario-desktop.png" class="desktop" alt="Super Mario">
 		<img data-src="img/super-mario-tablet.png" class="tablet" alt="Super Mario">
@@ -366,7 +430,7 @@
 	</div>
 	
 	<!-- Section autres -->
-	<div class="projet section3 projet1">
+	<div class="projet section4 projet1">
 		<h1><?php echo $_GET["lang"] == "fr" ? "<em>Enter Sandman</em> de Metallica" : ($_GET["lang"] == "en" ? "<em>Enter Sandman</em> by Metallica" : ""); ?></h1>
 		<img data-src="img/audio-desktop.png" class="desktop" alt="Projet audio">
 		<img data-src="img/audio-tablet.png" class="tablet" alt="Projet audio">
@@ -381,19 +445,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
 	</div>
-	<div class="projet section3 projet2">
-		<h1><?php echo $_GET["lang"] == "fr" ? "Zoomorphisme" : ($_GET["lang"] == "en" ? "Zoomorphism" : ""); ?></h1>
-		<img data-src="img/zoomorphisme-desktop.jpg" class="desktop" alt="<?php echo $_GET["lang"] == "fr" ? "Zoomorphisme" : ($_GET["lang"] == "en" ? "Zoomorphism" : ""); ?>">
-		<img data-src="img/zoomorphisme-tablet.jpg" class="tablet" alt="<?php echo $_GET["lang"] == "fr" ? "Zoomorphisme" : ($_GET["lang"] == "en" ? "Zoomorphism" : ""); ?>">
-		<img data-src="img/zoomorphisme-phone.jpg" class="phone" alt="<?php echo $_GET["lang"] == "fr" ? "Zoomorphisme" : ($_GET["lang"] == "en" ? "Zoomorphism" : ""); ?>">
-		<p>
-			<?php echo $_GET["lang"] == "fr" ? "Ce projet a été réalisé dans le cadre d'un cours à l'aide d'Adobe Photoshop. Il consiste en la fusion d'une image du guitariste Slash et de celle d'un loup." : ($_GET["lang"] == "en" ? "I created this project in a school class with Adobe Photoshop. Il consists of the fusion of images of guitarist Slash and a wolf." : ""); ?>
-		</p>
-		<span class="next"><i class="fa fa-chevron-right fa-2x"></i></span>
-		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
-		<i class="fa fa-3x fa-times-circle"></i>
-	</div>
-	<div class="projet section3 projet3">
+	<div class="projet section4 projet2">
 		<h1><?php echo $_GET["lang"] == "fr" ? "Générique de série télé fictive" : ($_GET["lang"] == "en" ? "Credits for a fictive TV series" : ""); ?></h1>
 		<video controls>
 			<source src="img/tv-flash.mp4" type="video/mp4">
@@ -405,20 +457,8 @@
 		<span class="next"><i class="fa fa-chevron-right fa-2x"></i></span>
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
-   </div>
-   <div class="projet section3 projet4">
-		<h1><?php echo $_GET["lang"] == "fr" ? "Logo d'une compagnie fictive" : ($_GET["lang"] == "en" ? "Logo for a fictive company" : ""); ?></h1>
-		<img data-src="img/logo-desktop.png" class="desktop" alt="<?php echo $_GET["lang"] == "fr" ? "Logo d'une compagnie fictive" : ($_GET["lang"] == "en" ? "Logo for a fictive company" : ""); ?>">
-		<img data-src="img/logo-tablet.png" class="tablet" alt="<?php echo $_GET["lang"] == "fr" ? "Logo d'une compagnie fictive" : ($_GET["lang"] == "en" ? "Logo for a fictive company" : ""); ?>">
-		<img data-src="img/logo-phone.png" class="phone" alt="<?php echo $_GET["lang"] == "fr" ? "Logo d'une compagnie fictive" : ($_GET["lang"] == "en" ? "Logo for a fictive company" : ""); ?>">
-		<p>
-			<?php echo $_GET["lang"] == "fr" ? "J'ai réalisé ce logo pour la compagnie fictive de camion de restauration Lord's Burgers dans le cadre d'un cours à l'aide d'Adobe Illustrator." : ($_GET["lang"] == "en" ? "I created this logo for the fictive food truck company Lord's Burgers during a class using Adobe Illustrator." : ""); ?>
-		</p>
-		<span class="next"><i class="fa fa-chevron-right fa-2x"></i></span>
-		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
-		<i class="fa fa-3x fa-times-circle"></i>
-	</div>
-	<div class="projet section3 projet5 changeImage" data-images="2">
+   	</div>
+	<div class="projet section4 projet3 changeImage" data-images="2">
 		<h1><?php echo $_GET["lang"] == "fr" ? "Affichages muraux - Technique d'Intégration Multimédia" : ($_GET["lang"] == "en" ? "Wall displays - Multimedia Integration Technic" : ""); ?></h1>
 		<img data-src="img/branding-desktop_1.png" class="desktop" alt="<?php echo $_GET["lang"] == "fr" ? "Affichages muraux - Techniques d'Intégration Multimédia" : ($_GET["lang"] == "en" ? "Wall displays - Multimedia Integration Technics" : ""); ?>">
 		<img data-src="img/branding-tablet_1.png" class="tablet" alt="<?php echo $_GET["lang"] == "fr" ? "Affichages muraux - Techniques d'Intégration Multimédia" : ($_GET["lang"] == "en" ? "Wall displays - Multimedia Integration Technics" : ""); ?>">
@@ -430,7 +470,7 @@
 		<span class="previous"><i class="fa fa-chevron-left fa-2x"></i></span>
 		<i class="fa fa-3x fa-times-circle"></i>
 	</div>
-	<div class="projet section3 projet6">
+	<div class="projet section4 projet4">
 		<h1>Motion design: <?php echo $_GET["lang"] == "fr" ? "Réaction en chaîne" : ($_GET["lang"] == "en" ? "Chained reaction" : ""); ?></h1>
 		<video controls>
 			<source src="img/motion_design.mp4" type="video/mp4">
@@ -452,10 +492,12 @@
 		<div class="section1"></div>
 		<div class="section2"></div>
 		<div class="section3"></div>
+		<div class="section4"></div>
 	</div>
 	<div class="bulle_compteur bulle_compteur_1"><?php echo $_GET["lang"] == "fr" ? "Programmation" : ($_GET["lang"] == "en" ? "Programming" : ""); ?></div>
-	<div class="bulle_compteur bulle_compteur_2"><?php echo $_GET["lang"] == "fr" ? "Illustrations" : ($_GET["lang"] == "en" ? "Illustrations" : ""); ?></div>
-	<div class="bulle_compteur bulle_compteur_3"><?php echo $_GET["lang"] == "fr" ? "Autres" : ($_GET["lang"] == "en" ? "Others" : ""); ?></div>
+	<div class="bulle_compteur bulle_compteur_2"><?php echo $_GET["lang"] == "fr" ? "Design graphique" : ($_GET["lang"] == "en" ? "Graphic design" : ""); ?></div>
+	<div class="bulle_compteur bulle_compteur_3"><?php echo $_GET["lang"] == "fr" ? "Illustrations" : ($_GET["lang"] == "en" ? "Illustrations" : ""); ?></div>
+	<div class="bulle_compteur bulle_compteur_4"><?php echo $_GET["lang"] == "fr" ? "Autres" : ($_GET["lang"] == "en" ? "Others" : ""); ?></div>
    
     <?php
 		include("include/footer.php");
