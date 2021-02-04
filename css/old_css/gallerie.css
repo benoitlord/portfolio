@@ -1,0 +1,408 @@
+/* Gallerie de la page Portfolio */
+
+#section1, #section2, #section3{
+	width: 100%;
+}
+
+#section1 img, #section2 img, #section3 img{
+	margin: 20px;
+}
+
+#section3{
+	margin-bottom: 150px;
+}
+
+.img-gallerie{
+	width: 400px;
+	height: 300px;
+	position: relative;
+	left:-15px;
+	top:0px;
+	margin: 15px;
+	display: inline-block;
+	background: url(../img/lorempixel-gallerie.jpg);
+	opacity: 0;
+}
+
+.img-gallerie.site-1{
+	background: url(../img/garderie-gallerie.jpg);
+}
+
+.img-gallerie.site-2{
+	background: url(../img/app-gallerie.png);
+}
+
+.img-gallerie.site-3{
+	background: url(../img/site_piano_gallerie);
+}
+
+.img-gallerie.site-4{
+	background: url(../img/affichage-gallerie.jpg);
+}
+
+.img-gallerie.illustration-1{
+	background: url(../img/star-wars-gallerie.jpg);
+}
+
+.img-gallerie.illustration-2{
+	background: url(../img/avengers-gallerie.jpg);
+}
+
+.img-gallerie.illustration-3{
+	background: url(../img/batman-gallerie.png);
+}
+
+.img-gallerie.illustration-4{
+	background: url(../img/flash-gallerie.png);
+}
+
+.img-gallerie.illustration-5{
+	background: url(../img/green-arrow-gallerie.png);
+}
+
+.img-gallerie.illustration-6{
+	background: url(../img/harry-potter-gallerie.png);
+}
+
+.img-gallerie.illustration-7{
+	background: url(../img/ron-weasley-gallerie.png);
+}
+
+.img-gallerie.illustration-8{
+	background: url(../img/logo-gryffindor-gallerie.png);
+}
+
+.img-gallerie.illustration-9{
+	background: url(../img/lord-voldemort-gallerie.png);
+}
+
+.img-gallerie.illustration-10{
+	background: url(../img/jacob-frye-gallerie.png);
+}
+
+.img-gallerie.illustration-11{
+	background: url(../img/master-chief-gallerie.png);
+}
+
+.img-gallerie.illustration-12{
+	background: url(../img/super-mario-gallerie.png);
+}
+
+.img-gallerie.projet-1{
+	background: url(../img/audio-gallerie.jpg);
+}
+
+.img-gallerie.projet-2{
+	background: url(../img/zoomorphisme-gallerie.jpg);
+}
+
+.img-gallerie.projet-3{
+	background: url(../img/tv-flash-gallerie.jpg);
+}
+
+.img-gallerie.projet-4{
+	background: url(../img/logo-gallerie.png);
+}
+
+.img-gallerie.projet-5{
+	background: url(../img/branding-gallerie.png);
+}
+
+	/* Overlay pour la description des projets */
+
+.projet{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 700px;
+	height: 700px;
+	background-color: #ddd;
+	z-index: 10;
+	box-shadow: 3px 3px 20px rgba(0,0,0,0.3);
+	padding: 20px 40px;
+	display:none;
+	margin-left: -390px;
+	margin-top: -370px;
+}
+
+.projet i.fa-times-circle{
+	color: #68b32d;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-o-transition: color 0.3s;
+}
+
+.projet i.fa-times-circle:hover{
+	cursor: pointer;
+	color: #58a31d;
+}
+
+.projet p{
+	font-size: 18px;
+}
+
+#section3 .projet3 video{
+	width: 650px;
+}
+
+.projet h1{
+	font-size: 30px;
+	width: 500px;
+}
+
+.projet .next, .projet .previous{
+	background-color: #68b32d;
+	padding: 20px 9px;
+	transition: background-color 0.3s;
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	-o-transition: background-color 0.3s;
+}
+
+.projet .next:hover, .projet .previous:hover{
+	background-color: #58a31d;
+}
+
+.projet .next .fa, .projet .previous .fa{
+	color: #ddd;
+}
+
+.projet .next{
+	position: absolute;
+	right: 0px;
+	top: 325px;
+}
+
+.projet .previous{
+	position: absolute;
+	left: 0px;
+	top: 325px;
+}
+
+.projet img{
+	margin: 0 auto;
+}
+
+.black-overlay{
+	display: none;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 9;
+}
+
+	/* Overlay de couleur au hover */
+
+.overlay{
+	width: 400px;
+	padding:136px 0px;
+	background-color: rgba(104, 179, 45, 0.5);
+	position:absolute;
+	left:0px;
+	top:0px;
+	opacity: 0;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none; 
+	
+	-webkit-transform: scaleY(0.01);
+	-moz-transform: scaleY(0.01);
+	-o-transform: scaleY(0.01);
+	-ms-transform: scaleY(0.01);
+	transform: scaleY(0.01);
+	
+	-webkit-transform-origin: bottom center;
+	-moz-transform-origin: bottom center;
+	-o-transform-origin: bottom center;
+	-ms-transform-origin: bottom center;
+	transform-origin: bottom center;
+	
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+}
+
+.img-gallerie:hover .overlay{
+	opacity: 1;
+	cursor: pointer;
+	
+	-webkit-transform: scaleY(1);
+	-moz-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
+}
+
+.desc-overlay{
+	display: block;
+	
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	-o-transform: translateY(10px);
+	-ms-transform: translateY(10px);
+	transform: translateY(10px);
+	
+	-webkit-transition: transform 0.3s;
+	-moz-transition: transform 0.3s;
+	-o-transition: transform 0.3s;
+	-ms-transition: transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.overlay:hover .desc-overlay{
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+/* Pour tablette */
+
+@media screen and (max-width:1366px) and (min-width: 668px){
+	
+	/* Pour changer la taille de la description des projets pour l'adapter à la tablette */
+	.projet{
+		width: 600px;
+		height: 660px;
+		margin-top: -350px;
+		margin-left: -340px;
+	}
+	
+	.projet .next{
+		top: 300px;
+	}
+
+	.projet .previous{
+		top: 300px;
+	}
+	
+	#section3 .projet3 video{
+		width: 500px;
+	}
+}
+
+/* Pour téléphone */
+@media screen and (max-width: 667px){
+/* Pour afficher la bonne image dans la gallerie (bonne résolution) */
+	.img-gallerie{
+		background: url(../img/lorempixel-gallerie-phone.jpg);
+		width: 300px;
+		height: 200px;
+	}
+	.img-gallerie.site-1{
+		background: url("../img/garderie-gallerie-phone.jpg");
+	}
+	.img-gallerie.site-2{
+		background: url("../img/app-gallerie-phone.png");
+	}
+	.img-gallerie.site-3{
+		background: url("../img/site_piano_gallerie_phone");
+	}
+	.img-gallerie.site-4{
+		background: url(../img/affichage-gallerie-phone.jpg);
+	}
+	.img-gallerie.illustration-1{
+		background: url(../img/star-wars-gallerie-phone.jpg);
+	}
+	.img-gallerie.illustration-2{
+		background: url(../img/avengers-gallerie-phone.jpg);
+	}
+	.img-gallerie.illustration-3{
+		background: url(../img/batman-gallerie-phone.png);
+	}
+	.img-gallerie.illustration-4{
+		background: url(../img/flash-gallerie-phone.png);
+	}
+	.img-gallerie.illustration-5{
+		background: url(../img/green-arrow-gallerie-phone.png);
+	}
+	.img-gallerie.illustration-6{
+		background: url(../img/harry-potter-gallerie-phone.png);
+	}
+	.img-gallerie.illustration-7{
+		background: url(../img/ron-reasley-gallerie-phone.png);
+	}
+	.img-gallerie.illustration-8{
+		background: url(../img/logo-gryffindor-gallerie-phone.png);
+	}
+	.img-gallerie.illustration-9{
+		background: url(../img/lord-voldemort-gallerie-phone.png);
+	}
+	.img-gallerie.illustration-10{
+		background: url(../img/jacob-frye-gallerie-phone.png);
+	}
+	.img-gallerie.illustration-11{
+		background: url(../img/master-chief-gallerie-phone.png);
+	}
+	.img-gallerie.illustration-12{
+		background: url(../img/super-mario-gallerie-phone.png);
+	}
+	.img-gallerie.projet-1{
+		background: url(../img/audio-gallerie-phone.jpg);
+	}
+	.img-gallerie.projet-2{
+		background: url(../img/zoomorphisme-gallerie-phone.jpg);
+	}
+	.img-gallerie.projet-3{
+		background: url(../img/tv-flash-gallerie-phone.jpg);
+	}
+	.img-gallerie.projet-4{
+		background: url(../img/logo-gallerie-phone.png);
+	}
+	.img-gallerie.projet-5{
+		background: url(../img/branding-gallerie-phone.png);
+	}
+	.overlay{
+		width: 300px;
+		padding:86px 0px;
+	}
+	.site-1 .overlay, .site-3 .overlay, .site-4 .overlay, .projet-3 .overlay, .projet-4 .overlay{
+		padding:72px 0px;
+	}
+	
+	/* Pour changer la taille de la description des projets pour l'adapter aux téléphones */
+	.projet{
+		left: 50%;
+		top:50%;
+		width: 300px;
+		height: 490px;
+		padding: 20px;
+		margin-left: -170px;
+		margin-top: -275px;
+	}
+	.projet p{
+		font-size: 14px;
+	}
+	.projet h1{
+		font-size: 26px;
+		width: 240px;
+	}
+	.projet .next{
+		top: 230px;
+		
+	}
+	.projet .previous{
+		top: 230px;
+	}
+	.projet .next, .projet .previous{
+		font-size: 0.5em;
+	}
+	#section3 .projet3 video{
+		width: 90%;
+		margin-left: 15px
+	}
+}

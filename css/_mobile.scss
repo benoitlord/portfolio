@@ -1,0 +1,391 @@
+/* Style pour ordinateur */
+@media screen and (min-width: 1367px){
+	
+	/* Mise en forme du texte */
+	.texte{
+		width: 60%;
+	}
+	
+	/* Pour cacher les élément à afficher seulement sur tablette ou téléphone */
+	.tablet, .phone{
+		display :none;
+	}
+	
+	/* Pour call to actions plus foncés */
+	.call-to-action.fonce{
+		background-color: $grisFonceFonce;
+		
+		.haut{
+			background-color: $grisHautCTAFonce;
+		}
+	}
+	
+	/* Pour afficher la bonne image dans les header (bonne résolution) */
+	header{
+		width: 100%;
+		height: 600px;
+		
+		&.contact{
+			background: url(../img/contact-desktop.png), $gris; 
+			background-repeat: no-repeat;
+			background-position: center right;
+		}
+
+		&.services{
+			background: url(../img/services-desktop.png), $gris; 
+			background-repeat: no-repeat;
+			background-position: center left;
+		}
+
+		&.competences{
+			background: url(../img/competences-desktop.png), $gris; 
+			background-repeat: no-repeat;
+			background-position: center left;
+		}
+	}
+	
+	.tablet-slider{
+		display:none;
+	}
+} 
+
+/* Style pour iPad Pro landscape */
+@media screen and (width: 1366px) and (orientation: landscape){
+	.texte{
+		width: 60%;
+	}
+}
+
+
+/* Style pour tablettes */
+@media screen and (max-width: 1365px) and (min-width: 668px){
+	
+	/* Mise en forme de la page */
+    .page-content{
+        padding: 20px 50px 170px 50px;
+    }
+	
+	/* Mise en forme du texte */
+	.texte{
+		width: 100%;
+	}
+	
+	/* Pour cacher les élément à afficher seulement sur ordinateur ou téléphone */
+	.desktop, .phone{
+		display: none;
+	}
+	
+	/* Pour call to actions plus foncés */
+	.call-to-action.fonce-tablet{
+		background-color: $grisFonceFonce;
+		
+		.haut{
+			background-color: $grisHautCTAFonce;
+		}
+	}
+	
+	/* Pour afficher la bonne image dans les header (bonne résolution) */
+	header{
+		width: 100%;
+		height: 500px;
+		
+		&.contact{
+			background: url(../img/contact-tablet.png), $gris;
+			background-repeat: no-repeat;
+			background-position: center right;
+		}
+
+		&.services{
+			background: url(../img/services-tablet.png), $gris;
+			background-repeat: no-repeat;
+			background-position: center left;
+		}
+
+		&.competences{
+			background: url(../img/competences-tablet.png), $gris;
+			background-repeat: no-repeat;
+			background-position: center left;
+		}
+	}
+	
+	.tablet-slider{
+		display: none;
+	}
+	
+	/* Mise en forme différente pour le formulaire de contact */
+	.nom, .prenom{
+		display:block;
+	}
+	#contact{
+		textarea{
+			width: 500px;
+		}
+		#email{
+			&.fr{
+				width: 360px;
+			}
+			&.en{
+				width: 385px;
+			}
+		}
+		#nom{
+			&.fr{
+				width: 452px;
+			}
+			&.en{
+				width: 415px;
+			}
+		}
+		#prenom{
+			&.fr{
+				width: 428px;
+			}
+			&.en{
+				width: 415px;
+			}
+		}
+	}
+	
+	/* Page competences*/
+	.droite{
+		width: 70%;
+		margin-left: 0px;
+		margin-top: 15px;
+		
+		img{
+			margin-left: 0px;
+		}
+	}
+	.gauche{
+		width: 100%;
+	}
+	
+	/* Flèches de la page d'accueil */
+	.scroll{
+		&.scroll-1{
+			left: 65px;
+			top: 400px;
+		}
+		&.scroll-2{
+			right: 65px;
+			top: 400px;
+		}
+	}
+	
+	/* 404 */
+	.missing{
+		h1{
+			font-size: 145px;
+			display: inherit;
+		}
+		.missing p{
+			font-size: 24px;
+			width: 45%;
+		}
+		.missing img{
+			width: 45%;
+			margin-top: 100px; 
+		}
+	}
+}
+
+/* Pour cacher partie droite du footer et les flèches de l'accueil sur tablette portrait (pas assez de place) */
+
+@media screen and (max-width: 1024px) and (min-width: 668px) and (orientation: portrait){
+	footer{
+		.droite{
+			display: none;
+		}
+		.gauche{
+			width: 100%;
+		}
+	}
+	.scroll{
+		display: none;
+	}
+}
+
+/* Style particulier pour le slider sur tablette */
+@media screen and (max-width:1400px){
+	#slider ul li{
+		width: 650px;
+		height: 500px;
+	}
+	#slider span.description-slide{
+		left: 0px;
+		bottom: 0px;
+	}
+	.tablet-slider{
+		display:block;
+	}
+	.desktop{
+		display:none;
+	}
+	.phone{
+		display: none;
+	}
+	.tablet{
+		display : block;
+	}
+}
+
+/* Style pour téléphones */
+@media screen and (max-width: 667px){
+	
+	/* Mise en forme de la page */
+    .page-content{
+        padding: 20px 30px 170px 30px;
+    }
+	
+	/* Mise en forme du texte */
+	.texte{
+		width: 100%;
+	}
+	
+	/* Pour cacher les élément à afficher seulement sur ordinateur ou téléphone */
+	.desktop, .tablet{
+		display: none;
+	}
+	.tablet-slider{
+		display:none;
+	}
+	.phone{
+		display:block;
+	}
+	
+	/* Pour changer la taille du slider pour l'adapter pour les téléphones */
+	#slider ul li{
+		width: 300px;
+		height: 300px;
+	}
+	#slider span.description-slide{
+		left: 0px;
+		bottom: 0px;
+		padding: 10px 3%;
+		width: 94%;
+		font-size: 20px;
+	}
+	
+	/* Pour call to actions plus foncés */
+	.call-to-action.fonce{
+		background-color: $grisFonceFonce;
+		
+		.haut{
+			background-color: $grisHautCTAFonce;
+		}
+	}
+	.call-to-action2{
+		width: 80%;
+		padding: 10%;
+		height: 350px;
+		margin-left: 0px!important;
+		
+		h2{
+			border: none;
+		}
+	}
+	
+	/* Pour cacher la partie droite du footer sur téléphone (pas assez d'espace) */
+	footer{
+		.droite{
+			display: none;
+		}
+		.gauche{
+			width: 100%;
+		}
+	}
+	
+	/* Pour afficher la bonne image dans les header (bonne résolution) */
+	header{
+		width: 100%;
+		height: 300px;
+		
+		&.contact{
+			background: url(../img/contact-phone.png), $gris; 
+			background-repeat: no-repeat;
+			background-position: center right;
+		}
+
+		&.services{
+			background: url(../img/services-phone.png), $gris; 
+			background-repeat: no-repeat;
+			background-position: center left;
+		}
+
+		&.competences{
+			background: url(../img/competences-phone.png), $gris; 
+			background-repeat: no-repeat;
+			background-position: center left;
+		}
+	}	
+	
+	.overlay{
+		width: 300px;
+		padding: 88px 0px;
+		font-size: 20px;
+	}
+	
+	/* Mise en forme différente pour le formulaire de contact */
+	#contact{
+		#nom.fr, #nom.en{
+			width: 300px
+		}
+		#prenom.fr, #prenom.en{
+			width: 300px;
+		}
+		#email.fr, #email.en{
+			width: 300px;
+		}
+		textarea{
+			width: 300px;
+		}
+		.nom, .prenom{
+			display:block;
+		}
+	}
+	
+	.erreur{
+		width: 180px;
+		font-size: 14px;
+	}
+	.alerte{
+		width: 180px;
+		font-size: 14px;
+	}
+	.gauche{
+		width: 100%;
+	}
+	.droite{
+		width: 100%;
+		margin-left: 0px;
+		margin-top: 15px;
+		
+		img{
+			margin-left: 0px;
+		}
+	}
+	
+	.scroll{
+		display: none;
+	}
+	
+	/* 404 */
+	.missing{
+		padding-bottom: 20px;
+		
+		h1{
+			font-size: 110px;
+			display: inherit;
+		}
+		p{
+			font-size: 24px;
+			width: 100%;
+		}
+		img{
+			margin: 20px auto; 
+			float: none;
+			width: 300px;
+			display: block;
+		}
+	}	
+}

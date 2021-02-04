@@ -1,34 +1,52 @@
-<html>
+<!doctype HTML>
+<html style="padding: 0px; margin: 0px">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>404 Not Found</title>
-<style type="text/css"><!--
-.style3 {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  color: #CC0000;
-}
-.s {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: normal;
-  color: #000000;
-  line-height: 18px;
-  text-align: center;
-  border: 1px solid #CCCCCC;
-  background-color: #FFFFEC;
-}
-body {
-  background-color: #FFFFFF;
-  margin-top: 100px;
-}
---></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<title>OOPS!</title>
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,700,900" rel="stylesheet">
+
+	<!-- Pour fixer Oswald sur IE -->
+	<link rel="stylesheet" type="text/css" href="css/ie.css" />
+
+	<!-- Font Awesome -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/jquery.easeScroll.js"></script>
+
+	<!-- CSS personalisé -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- JavaScript personalisé -->
+	<script src="js/main.js"></script>
+	<script src="js/preparetransition.min.js"></script>
+	
+	<!-- Favicon -->
+	<link rel="icon" href="img/logo_petit.png" type="image/png">
 </head>
-<body>
-<div align="center">
-<h2><span class="style3">404 Not Found</span></h2>
-<table border="0" cellpadding="8" cellspacing="0" width="460">
-<tbody><tr><td class="s">The requested URL was not found on this server.</td></tr></tbody>
-</table>
-</div>
+<body style="padding: 0px; margin: 0px">
+	<div class="page-content missing fadedout">
+		<img src="img/missing.png" alt="erreur 404">
+		<h1>OOPS !</h1>
+		<p>
+			Malheureusement, cette page n'existe pas...
+		</p>
+		<p>
+			Vérifiez l'adresse que vous avez entré ou retournez à l'accueil et utilisez le menu de navigation pour atteindre la page que vous cherchez.
+		</p>
+		<p><a href="index.php" class="bouton">Retourner à l'accueil <i class="fa fa-chevron-right fleche"></i></a></p>
+	</div>
+	<!-- Loader-->
+	<div id="loader">
+		<div class="loader-part" id="loader-part-1"></div>
+		<div class="loader-part" id="loader-part-2"></div>
+		<div class="loader-part" id="loader-part-3"></div>
+	</div>
 </body>
 </html>

@@ -1,193 +1,136 @@
+<?php
+	session_start();
+	ob_start();
+	
+	include("include/add_lang.php");
+?>
 <!doctype html>
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-	<title>Me contacter</title>
+	<title><?php echo $_GET["lang"] == "fr" ? "Me contacter - Benoit Lord" : ($_GET["lang"] == "en" ? "Contact me - Benoit Lord" : ""); ?></title>
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
-
-	<!-- Font Awesome -->
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-
-	<!-- JQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-	<!-- CSS personalisé -->
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/nav.css" rel="stylesheet">
-
-	<!-- JavaScript personalisé -->
-	<script src="js/portfolio.js"></script>
-	<script src="js/validation_form.js"></script>
-	<script src="js/nav.js"></script>
+	<?php 
+		include("include/links.php");
+	?>
 	
-	<!-- Favicon -->
-	<link rel="icon" href="img/favicon.png" type="image/png">
+	<script src="js/validation_form.js"></script>
 </head>
 <body>
     
     <!-- Contenu de la page -->
-    <div class="page-content">
+    <div class="page-content fadedout">
        
-       	<!-- Titre du site -->
-        <h1>Benoit Lord</h1>
+       	<a href="index.php" class="logo"><img src="img/logo.png" alt="logo"></a>
         
         <!-- Header avec image -->
         <header class="contact">
         </header>
         
         <!-- Titre de la page --> 
-        <h1>Me contacter</h1>
+        <h1><?php echo $_GET["lang"] == "fr" ? "Me contacter" : ($_GET["lang"] == "en" ? "Contact me" : ""); ?></h1>
         
         <!-- Section du formulaire de contact -->
-        <h2>Par courriel</h2>
-        <p>
-        	Pour me contacter par courriel, vous n'avez qu'à utiliser le formulaire ci-dessous. Entrez les informations demandées et appuyez sur « Envoyer ». Je vous répondrai dès que possible.
-        </p>
-        
-        <!-- PHP pour le formulaire -->
-        <?php
-			$prenom = $_POST["prenom"];
-			$nom = $_POST["nom"];
-			$email = $_POST["email"];
-			$message = nl2br($_POST["message"]);
-		
-			$headers = "Content-Type: text/html\n" .
-					   "From: " . utf8_decode("$prenom $nom") . "<$email>\n" .
-					   'MIME-Version: 1.0' . "\n";
-		
-			$msg = "
-			<style>
+		<div class="gauche">
+			<p>
+				<?php echo $_GET["lang"] == "fr" ? "Pour me contacter par courriel, vous n'avez qu'à utiliser le formulaire ci-dessous. Entrez les informations demandées et appuyez sur « Envoyer ». Je vous répondrai dès que possible." : ($_GET["lang"] == "en" ? "To send me an email, you can simply use the form below. Fill the fields and press \"Send\". I will answer you as fast as possible." : ""); ?>
+			</p>
 			
-				*{
-					font-family: Roboto;
-				}
-			
-			</style>
-			<h1>Courriel de Portfolio</h1>
-			<p>Nom: $prenom $nom</p>
-			<p>Email : $email</p> 
-			<p>Message: </p>
-			<p>$message</p>";
-			
-			if(isset($_POST["envoyer"])){
-				if(mail("benoitlord98@outlook.com", "Courriel de Portfolio", $msg, $headers)){
-					echo "<p class='alerte'>Votre message a été envoyé</p>";
-				}
-			}
-			
-		?>
-       
-       	<!-- Formulaire de contact -->
-        <form action="me-contacter.php"  method="post" id="contact" onsubmit="return valider();">
-        	<p class="prenom">
-        		<label for="prenom">Prénom : </label>
-        		<input type="text" id="prenom" name="prenom">
-        	</p>
-        	<p class="nom">
-        		<label for="nom">Nom : </label>
-        		<input type="text" id="nom" name="nom">
-        	</p>
-        	<p class="email">
-        		<label for="email">Adresse courriel : </label>
-        		<input type="text" id="email" name="email">
-        	</p>
-        	<p>
-        		<label for="message">Message : </label><br>
-				<textarea id="message" rows="20" name="message"></textarea>
-        	</p>
-        	<button type="submit" value="Envoyer" name="envoyer">Envoyer <i class="fa fa-chevron-right fleche"></i></button
-        </form>
-        
-        <!-- Autres informations -->
-        <h2>Réseaux sociaux et C.V.</h2>
-		<p>Vous pouvez aussi me contacter par ces autres moyens ou encore visiter mes réseaux sociaux.</p>
-		<a href="https://www.facebook.com/tiben234"><i class="fa fa-facebook-square fa-3x social"></i></a>
-		<a href="http://www.linkedin.com/in/benoit-l-28280a10b"><i class="fa fa-linkedin-square fa-3x social"></i></a>
-		<a href="https://twitter.com/tiben234"><i class="fa fa-twitter-square fa-3x social"></i></a>
-		<a href="downloads/Lord_Benoit_fr.pdf" download="benoit_lord_cv.pdf" class="cv"><i class="fa fa-file fa-3x"></i><span> C.V.</span></a>
-		
-    </div>
-    
-    <!-- Footer -->
-  	<footer class="clear">
-  		<div class="gauche">
-  			&copy; Benoit Lord, 2017
-  		</div>
-  		<div class="droite">
-  			<ul>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="me-contacter.php">Me contacter</a></li>
-				<li><a href="services.html">Mes services</a></li>
-				<li><a href="competences.html">Mes compétences</a></li>
-  			</ul>
-  		</div>
-  	</footer>
-   
-    <!-- Navigation pour ordinateur -->
-    <nav class="nav fermee">
-        <i class="fa fa-2x fa-bars menu"></i>
-        <div>
-            <a href="index.html" class="lien1"><i class="fa fa-2x fa-home"></i></a>
-            <a href="portfolio.html" class="lien2"><i class="fa fa-2x fa-book"></i></a>
-            <a href="me-contacter.php" class="lien3 actif"><i class="fa fa-2x fa-envelope"></i></a>
-            <a href="services.html" class="lien4"><i class="fa fa-2x fa-thumbs-up"></i></a>
-            <a href="competences.html" class="lien5"><i class="fa fa-2x fa-pie-chart"></i></a>
-        </div>
-    </nav>
-    
-    <!-- Div contenant les liens du sous-menu -->
-	<div class="sous-liens">
-		<a href="portfolio.html#section1" class="lien2-1"><i class="fa fa-2x fa-globe"></i></a>
-		<a href="portfolio.html#section2" class="lien2-2"><i class="fa fa-2x fa-pencil"></i></a>
-		<a href="portfolio.html#section3" class="lien2-3"><i class="fa fa-2x fa-picture-o"></i></a>
-	</div>
-    
-    <!--Bulles pour indiquer les pages--> 
-    <div class="bulle_1">Accueil</div>
-    <div class="bulle_2">Portfolio</div>
-    <div class="bulle_2-1">Sites web</div>
-    <div class="bulle_2-2">Illustrations</div>
-    <div class="bulle_2-3">Autres</div>
-    <div class="bulle_3">Me contacter</div>
-    <div class="bulle_4">Mes services</div>
-    <div class="bulle_5">Mes compétences</div>
+			<?php
+				if(isset($_POST["envoyer"])){
+					$prenom = $_POST["prenom"];
+					$nom = $_POST["nom"];
+					$email = $_POST["email"];
+					$message = nl2br($_POST["message"]);
 
-    <!-- Navigation pour tablettes et téléphones -->
-    <nav class="nav-mobile fermee">
-        <i class="fa fa-2x fa-bars menu"></i>
-        <div>
-            <a href="index.html" class="lien1"><i class="fa fa-2x fa-home"></i></a>
-			<span class="lien2"><i class="fa fa-2x fa-book"></i></span>
-            <a href="me-contacter.php" class="lien3 actif"><i class="fa fa-2x fa-envelope"></i></a>
-            <a href="services.html" class="lien4"><i class="fa fa-2x fa-thumbs-up"></i></a>
-            <a href="competences.html" class="lien5"><i class="fa fa-2x fa-pie-chart"></i></a>
-        </div>
-    </nav>
-    
-    <!-- Liens du sous menu -->
-    <a href="portfolio.html" class="lien2-0-mobile"><i class="fa fa-home"></i></a>
-    <a href="portfolio.html#section1" class="lien2-1-mobile"><i class="fa fa-globe"></i></a>
-    <a href="portfolio.html#section2" class="lien2-2-mobile"><i class="fa fa-pencil"></i></a>
-    <a href="portfolio.html#section3" class="lien2-3-mobile"><i class="fa fa-picture-o"></i></a>
-    
-    <!-- Bulles pour indiquer les pages --> 
-    <div class="bulle_1-mobile">Accueil</div>
-    <div class="bulle_2-mobile">Portfolio</div>
-    <div class="bulle_2-0-mobile">Accueil</div>
-    <div class="bulle_2-1-mobile">Sites web</div>
-    <div class="bulle_2-2-mobile">Illustrations</div>
-    <div class="bulle_2-3-mobile">Autres</div>
-    <div class="bulle_3-mobile">Me contacter</div>
-    <div class="bulle_4-mobile">Mes services</div>
-    <div class="bulle_5-mobile">Mes compétences</div>
-    
-    <!-- Bouton pour remonter en haut de la page -->
-    <span id="bouton-haut"><i class="fa fa-chevron-up"></i></span>
+					$headers = "Content-Type: text/html\n" .
+							   "From: " . utf8_decode("$prenom $nom") . "<$email>\n" .
+							   'MIME-Version: 1.0' . "\n";
+
+					$msg = "
+					<style>
+
+						*{
+							font-family: Roboto;
+						}
+
+					</style>
+					<h1>Courriel de Portfolio</h1>
+					<p><strong>Nom:</strong> $prenom $nom</p>
+					<p><strong>Email :</strong> $email</p> 
+					<p><strong>Message:</strong> </p>
+					<p><i>$message</i></p>";
+				
+					if(mail("info@benoit-lord.com", "Courriel de Portfolio", $msg, $headers)){
+						if($_GET["lang"] == "fr"){
+							echo "<p class='alerte'>Votre message a été envoyé.</p>";
+						}
+						else if($_GET["lang"] == "en"){
+							echo "<p class='alerte'>Your message has been sent.</p>";
+						}
+					}
+					else{
+						echo "<p class='erreur'>Une erreur est survenue dans l'envoi.</p>";
+					}
+				}
+			?>
+
+			<!-- Formulaire de contact -->
+			<form action="me-contacter.php?lang=<?php echo $_GET["lang"]; ?>"  method="post" id="contact" onsubmit="return valider();">
+				<p class="prenom">
+					<label for="prenom"><?php echo $_GET["lang"] == "fr" ? "Prénom : " : ($_GET["lang"] == "en" ? "First name: " : ""); ?></label>
+					<input type="text" id="prenom" name="prenom" class="<?php echo $_GET["lang"] == "fr" ? "fr" : ($_GET["lang"] == "en" ? "en" : ""); ?>">
+				</p>
+				<p class="nom">
+					<label for="nom"><?php echo $_GET["lang"] == "fr" ? "Nom : " : ($_GET["lang"] == "en" ? "Last name: " : ""); ?></label>
+					<input type="text" id="nom" name="nom" class="<?php echo $_GET["lang"] == "fr" ? "fr" : ($_GET["lang"] == "en" ? "en" : ""); ?>">
+				</p>
+				<p class="email">
+					<label for="email"><?php echo $_GET["lang"] == "fr" ? "Adresse courriel : " : ($_GET["lang"] == "en" ? "Email address: " : ""); ?></label>
+					<input type="text" id="email" name="email" class="<?php echo $_GET["lang"] == "fr" ? "fr" : ($_GET["lang"] == "en" ? "en" : ""); ?>">
+				</p>
+				<p>
+					<label for="message">Message : </label><br>
+					<textarea id="message" rows="20" name="message"></textarea>
+				</p>
+				<button type="submit" value="Envoyer" name="envoyer" class="bouton"><?php echo $_GET["lang"] == "fr" ? "Envoyer" : ($_GET["lang"] == "en" ? "Send" : ""); ?> <i class="fa fa-chevron-right fleche"></i></button>
+			</form>
+		</div>
+		<div class="droite">
+			<h2><?php echo $_GET["lang"] == "fr" ? "Autres informations" : ($_GET["lang"] == "en" ? "Other informations" : ""); ?></h2>
+			<p><i class="fa fa-phone contact-infos"></i> (819) 351-8521</p>
+			<p><i class="fa fa-envelope contact-infos"></i> <a href="mailto:info@benoit-lord.com" class="pas-effet">info@benoit-lord.com</a></p>
+		</div>
+        
+        <!-- Réseaux sociaux et CV -->
+        <h2 style="clear: both;"><?php echo $_GET["lang"] == "fr" ? "Réseaux sociaux et C.V." : ($_GET["lang"] == "en" ? "Social Media and C.V." : ""); ?></h2>
+		<p><?php echo $_GET["lang"] == "fr" ? "Vous pouvez aussi visiter mes réseaux sociaux ou encore télécharger mon CV ici." : ($_GET["lang"] == "en" ? "You can also visit my social media or download my C.V. here." : ""); ?></p>
+		<a href="https://www.facebook.com/tiben234" class="nouvelonglet" target="_blank"><i class="fa fa-facebook-square fa-3x social"></i></a>
+		<a href="http://www.linkedin.com/in/benoit-l-28280a10b" class="nouvelonglet" target="_blank"><i class="fa fa-linkedin-square fa-3x social"></i></a>
+		<a href="https://twitter.com/tiben234" class="nouvelonglet" target="_blank"><i class="fa fa-twitter-square fa-3x social"></i></a>
+		<a href="downloads/Lord_Benoit_cv_<?php echo $_GET["lang"] == "fr" ? "fr" : ($_GET["lang"] == "en" ? "en" : "fr"); ?>.pdf" download class="cv nouvelonglet" target="_blank"><img src="img/icone_cv.png" alt="cv" width="45" style="margin-bottom: -5px; margin-left: -6px;" class="social"></a>
+		
+		<!-- Call to action vers portfolio -->
+		<div class="call-to-action2">
+			<div class="haut">
+				<h2><?php echo $_GET["lang"] == "fr" ? "Vous voulez revoir mes projets ?" : ($_GET["lang"] == "en" ? "Want to see my projects again?" : ""); ?></h2>
+			</div>
+			<div class="bas">
+				<p>
+					<?php echo $_GET["lang"] == "fr" ? "Ils sont juste ici, dans la page Portfolio." : ($_GET["lang"] == "en" ? "They are just here, on the Portfolio page." : ""); ?>
+				</p>
+				<a href="portfolio.php" class="bouton"><?php echo $_GET["lang"] == "fr" ? "Voir mes projets" : ($_GET["lang"] == "en" ? "See my projects" : ""); ?> <i class="fa fa-chevron-right fleche"></i></a>
+			</div>
+		</div>
+    </div>
+   
+    <?php
+		include("include/footer.php");
+		include("include/language_toggle.php");
+		include("include/loader.php");
+		include("include/nav.php");
+		include("include/bouton_haut.php");
+	?>
 </body>
 </html>
