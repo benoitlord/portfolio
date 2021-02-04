@@ -26,7 +26,7 @@ $(document).ready(function(){
 	"use strict";
 	
 	loadImages();
-	$("html").easeScroll();
+	//$("html").easeScroll();
 	
 	//Pour empêcher de drag and drop les images
 	$('img').on('dragstart', function(event) { event.preventDefault(); });
@@ -107,7 +107,7 @@ $(document).ready(function(){
 	var on = true;
 	var off = true;
 	
-	$(window).scroll(function(){
+	setInterval(function(){
 		if($(window).scrollTop() > 500){
 			if(on){
 				on = false;
@@ -122,7 +122,7 @@ $(document).ready(function(){
 			$('#bouton-haut').removeClass("visible");
 			//$('#bouton-haut').animate({right: "-55px"});
 		}
-	});
+	}, 50);
 });
 
 function loadImages(){
