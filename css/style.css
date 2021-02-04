@@ -1,0 +1,736 @@
+/* CSS DU SITE */
+
+/* Style de base */
+
+    /* Mise en page de la page */
+
+body{
+    font-family: roboto;
+	width: 100%;
+	min-height: 100%;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+html{
+	height: 100%;
+}
+
+    /* Titres */
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Oswald;
+    color: #68b32d;
+	border-bottom: 5px solid #dddddd;
+}
+
+h1{
+	width: 330px;
+	font-size: 36px;
+}
+
+h2{
+	width: 280px;
+	font-size: 28px;
+}
+
+h2.sous-titre{
+	color: black;
+	border: none;
+	font-family: roboto;
+	display: inline;
+	width: inherit;
+}
+
+	/* Mise en forme du texte */
+
+p{
+	font-size: 18px;
+}
+
+a{
+	color: #68b32d
+}
+
+	/* Sections gauche et droite dans certaines pages */
+
+.gauche{
+	float: left;
+}
+
+.droite{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+    /* Contenant du contenu de la page */
+
+.page-content{
+    padding: 20px 70px 170px 70px;
+}
+
+    /* Boutons */
+
+.bouton{
+	background-color: #68b32d;
+	border: none;
+	border-bottom: 5px #dddddd solid;
+	padding: 10px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+    font-size: 14px;
+	color: black;
+	text-decoration: none;
+}
+
+.bouton:hover{
+	border-bottom: 5px #dddddd solid;
+	box-shadow:1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.bouton .fa.fleche{
+	display: none;
+}
+
+button[type="submit"] .fa.fleche{
+	display: none;
+}
+
+.a-propos .bouton{
+	margin-bottom: 10px;
+}
+
+a.cv{
+	text-decoration: none;
+	height: 50px;
+	line-height: 50px;
+	display:inline-block;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+}
+
+a.cv:hover{
+	color: #ddd;
+}
+
+a.cv span{
+	height:50px;
+	line-height: 50px;
+	display: inline-block;
+	position: relative;
+	bottom:10px;
+	margin-left: 5px;
+}
+
+/* Slider */
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 700px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 1300px;
+  height: 700px;
+  background: #ccc;
+  text-align: center;
+}
+
+span.control_prev, span.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background-color: rgba(221, 221, 221, 0);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+span.control_prev:hover, span.control_next:hover {
+  background-color: rgba(221, 221, 221, 0.7);
+  transition: all 0.3s;
+}
+
+span.control_next {
+  right: 0;
+}
+
+span.description-slide{
+	color : black;
+	padding: 30px;
+	width: 230px;
+	z-index: 1;
+	background-color: rgba(221, 221, 221, 1);
+	position : absolute;
+	left: 530px;
+	top: 300px;
+	display : block;
+	font-size: 30px;
+}
+
+/* À propos . */
+
+.a-propos{
+	margin-top: 40px;
+}
+
+/* Calls to action */
+
+.calls-to-action{
+	width: 100%;
+	padding: 0px;
+	margin: 70px 0px;
+}
+
+.call-to-action{
+	padding: 20px 40px;
+	height: 300px;
+	float: left;
+	background-color: #ccc; 
+	margin: 0px;
+}
+
+.call-to-action h2{
+	width: 190px
+}
+
+/* Services */
+
+.services-1, .services-2{
+	width: 100%;
+}
+
+.service{
+	width: 23%;
+	text-align: center;
+	float: left;
+}
+
+.service h3{
+	border: none;
+	font-size: 24px;
+	color: black;
+}
+
+.service i.fa{
+	color: #68b32d;
+}
+
+/* Formulaire de contact */
+
+#contact{
+	width: 100%;
+}
+
+#contact label{
+	font-weight: bold;
+	margin: 0;
+}
+
+#nom, #prenom{
+	width: 370px;
+}
+
+.nom, .prenom{
+	display:inline-block;
+	margin-bottom: 0px;
+}
+
+#email{
+	width: 730px;
+}
+
+#contact textarea{
+	width: 870px;
+	margin-top: 20px;
+}
+
+#contact input:not([type="submit"]){
+	background-color: #ddd;
+	border: none;
+	height:25px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+	font-size: 16px;
+}
+
+#contact textarea{
+	background-color: #ddd;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+	font-size: 16px;
+}
+
+#contact input[type="submit"]{
+	background-color: #68b32d;
+	border: none;
+	border-bottom: 5px #ddd solid;
+	padding: 10px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+    font-size: 14px;
+	-webkit-appearance: none;
+	border-radius: 0px;
+}
+
+#contact input[type="submit"]:hover{
+	box-shadow:1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+#contact button[type="submit"]{
+	background-color: #68b32d;
+	border: none;
+	border-bottom: 5px #ddd solid;
+	padding: 10px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+    font-size: 14px;
+	-webkit-appearance: none;
+	border-radius: 0px;
+}
+
+#contact button[type="submit"]:hover{
+	box-shadow:1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+	/* Alertes du formulaire */
+
+.alerte{
+	background-color: #68b32d;
+	border-bottom: 5px solid #ddd;
+	color: black;
+	padding: 15px;
+	width: 500px;
+}
+
+.erreur{
+	background-color: rgb(255, 130, 130);
+	color: black;
+	padding: 20px;
+	width: 500px;
+}
+
+/* Boutons de réseaux sociaux */
+
+.social{
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+}
+
+.social:hover{
+	color: #ddd;
+}
+
+/* Compétences */
+
+.langages .gauche, .programmes .gauche{
+	width: 60%;
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.langages .droite, .programmes .droite{
+	width: 35%;
+	display: inline-block;
+	float: none;
+	margin-left: 30px;
+}
+
+.langages .droite img, .programmes .droite img{
+	width: 100%;
+}
+
+/* Headers */
+
+header{
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4); 
+}
+
+/* Footer */
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ccc;
+	padding: 80px;
+	height:10px;
+}
+
+footer ul{
+	list-style: none;
+	margin: 0;
+	vertical-align: middle;
+}
+
+footer ul li{
+	display: inline-block;
+	margin: 0px 10px; 
+	padding:0;
+	border-bottom: 3px solid transparent;
+	transition: all 0.3s;
+}
+
+footer ul li:hover{
+	border-bottom: 3px solid #ddd;
+}
+
+footer a{
+	color: #68b32d;
+	text-decoration: none;
+}
+
+/* Bouton haut */
+
+#bouton-haut{
+	position: fixed;
+	bottom : 50px;
+	right: -55px;
+	padding: 10px 12px;
+	background-color: #68b32d;
+	font-size: 1.7em;
+	border-bottom: 5px solid #ddd;
+	transition: color 0.2s, box-shadow 0.5s;
+	-webkit-transition: color 0.2s, box-shadow 0.5s;
+	-moz-transition: color 0.2s, box-shadow 0.5s;
+	-o-transition: color 0.2s, box-shadow 0.5s;
+}
+
+#bouton-haut:hover{
+	color: #ddd;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Style pour ordinateur */
+@media screen and (min-width: 1367px){
+	
+	/* Mise en forme du texte */
+	.texte{
+		width: 60%;
+	}
+	
+	/* Pour cacher les élément à afficher seulement sur tablette ou téléphone */
+	.tablet, .phone{
+		display :none;
+	}
+	
+	/* Pour call to actions plus foncés */
+	.call-to-action.fonce{
+		background-color: #bbb
+	}
+	
+	/* Pour afficher la bonne image dans les header (bonne résolution) */
+	header{
+		width: 100%;
+		height: 600px;
+	}
+	
+	header.contact{
+		background: url(../img/contact-desktop.png), #ddd; 
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+	
+	header.services{
+		background: url(../img/services-desktop.png), #ddd; 
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+	
+	header.competences{
+		background: url(../img/competences-desktop.png), #ddd; 
+		background-repeat: no-repeat;
+		background-position: center left;
+	}
+	
+	.tablet-slider{
+		display:none;
+	}
+} 
+
+/* Style pour iPad Pro landscape */
+@media screen and (width: 1366px) and (orientation: landscape){
+	.texte{
+		width: 60%;
+	}
+}
+
+
+/* Style pour tablettes */
+@media screen and (max-width: 1365px) and (min-width: 668px){
+	
+	/* Mise en forme de la page */
+    .page-content{
+        padding: 20px 50px 170px 50px;
+    }
+	
+	/* Mise en forme du texte */
+	.texte{
+		width: 100%;
+	}
+	
+	/* Pour cacher les élément à afficher seulement sur ordinateur ou téléphone */
+	.desktop, .phone{
+		display: none;
+	}
+	
+	/* Pour call to actions plus foncés */
+	.call-to-action.fonce-tablet{
+		background-color: #bbb
+	}
+	
+	/* Pour afficher la bonne image dans les header (bonne résolution) */
+	header{
+		width: 100%;
+		height: 500px;
+	}
+	
+	header.contact{
+		background: url(../img/contact-tablet.png), #ddd;
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+	
+	header.services{
+		background: url(../img/services-tablet.png), #ddd;
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+	
+	header.competences{
+		background: url(../img/competences-tablet.png), #ddd;
+		background-repeat: no-repeat;
+		background-position: center left;
+	}
+	
+	.tablet-slider{
+		display: none;
+	}
+	
+	/* Mise en forme différente pour le formulaire de contact */
+	.nom, .prenom{
+		display:block;
+	}
+	#contact textarea{
+		width: 500px;
+	}
+	#email{
+		width: 360px;
+	}
+	#nom{
+		width: 452px;
+	}
+	#prenom{
+		width: 428px;
+	}
+	
+	/* Page competences*/
+	.langages .droite, .programmes .droite{
+		width: 70%;
+		margin: 0px;
+	}
+	.langages .gauche, .programmes .gauche{
+		width: 100%;
+	}
+	.langages .droite, .programmes .droite{
+		float: none;
+	}
+}
+
+/* Pour cacher partie droite du footer sur tablette portrait (pas assez de place) */
+
+@media screen and (max-width: 1024px) and (min-width: 668px) and (orientation: portrait){
+	footer .droite{
+		display: none;
+	}
+}
+
+/* Style particulier pour le slider sur tablette */
+@media screen and (max-width:1400px){
+	#slider ul li{
+		width: 650px;
+		height: 500px;
+	}
+	span.description-slide{
+		left: 180px;
+		top: 190px;
+	}
+	.tablet-slider{
+		display:block;
+	}
+	.desktop{
+		display:none;
+	}
+	.phone{
+		display: none;
+	}
+	.tablet{
+		display : block;
+	}
+}
+
+/* Style pour téléphones */
+@media screen and (max-width: 667px){
+	
+	/* Mise en forme de la page */
+    .page-content{
+        padding: 20px 30px 170px 30px;
+    }
+	
+	/* Mise en forme du texte */
+	.texte{
+		width: 100%;
+	}
+	
+	/* Pour cacher les élément à afficher seulement sur ordinateur ou téléphone */
+	.desktop, .tablet{
+		display: none;
+	}
+	.tablet-slider{
+		display:none;
+	}
+	.phone{
+		display:block;
+	}
+	
+	/* Pour changer la taille du slider pour l'adapter pour les téléphones */
+	#slider ul li{
+		width: 300px;
+		height: 300px;
+	}
+	span.description-slide{
+		left: 70px;
+		top: 120px;
+		padding :10px;
+		width: 150px;
+		font-size: 20px;
+	}
+	
+	/* Pour call to actions plus foncés */
+	.call-to-action.fonce{
+		background-color: #bbb
+	}
+	
+	/* Pour cacher la partie droite du footer sur téléphone (pas assez d'espace) */
+	footer .droite{
+		display: none;
+	}
+	
+	/* Pour afficher la bonne image dans les header (bonne résolution) */
+	header{
+		width: 100%;
+		height: 300px;
+	}
+	
+	header.contact{
+		background: url(../img/contact-phone.png), #ddd; 
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+	
+	header.services{
+		background: url(../img/services-phone.png), #ddd; 
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+	
+	header.competences{
+		background: url(../img/competences-phone.png), #ddd; 
+		background-repeat: no-repeat;
+		background-position: center left;
+	}
+	
+	.overlay{
+		width: 300px;
+		padding: 88px 0px;
+		font-size: 20px;
+	}
+	
+	/* Mise en forme différente pour le formulaire de contact */
+	#nom{
+		width: 300px
+	}
+	#prenom{
+		width: 300px;
+	}
+	#email{
+		width: 300px;
+	}
+	#contact textarea{
+		width: 300px;
+	}
+	.nom, .prenom{
+		display:block;
+	}
+	.erreur{
+		width: 180px;
+		font-size: 14px;
+	}
+	.alerte{
+		width: 180px;
+		font-size: 14px;
+	}
+	.langages .droite, .programmes .droite{
+		width: 100%;
+		margin: 0px;
+	}
+	.langages .gauche, .programmes .gauche{
+		width: 100%;
+	}
+	.droite{
+		float: none;
+	}
+}
+
+/* Pour la transition entre les pages */
+
+.page-content{
+	opacity: 0;
+	position : relative;
+	right: 20px;
+}
