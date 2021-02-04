@@ -9,7 +9,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-	<title><?php echo $_GET["lang"] == "fr" ? "Benoit Lord, intégrateur multimédia spécialisé en design web" : ($_GET["lang"] == "en" ? "Benoit Lord, multimedia integrator specialised in web design" : ""); ?></title>
+	<title><?php echo $_GET["lang"] == "fr" ? "Benoit Lord, développeur web et designer graphique" : ($_GET["lang"] == "en" ? "Benoit Lord, web developer and graphic designer" : ""); ?></title>
 
 	<?php 
 		include("include/links.php");
@@ -92,13 +92,17 @@
       		<!-- Partie gauche -->
        		<div class="texte gauche">
 				<h1>Benoit Lord</h1>
-				<h2 class="sous-titre"><?php echo $_GET["lang"] == "fr" ? "Intégrateur multimédia spécialisé en design web" : ($_GET["lang"] == "en" ? "Multimedia Integrator Specialised in Web Design" : ""); ?></h2>
+				<h2 class="sous-titre"><?php echo $_GET["lang"] == "fr" ? "Développeur web et designer graphique" : ($_GET["lang"] == "en" ? "Web developer and graphic designer" : ""); ?></h2>
 				<p>
 					<?php echo $_GET["lang"] == "fr" ? "Grâce à ma formation en Techniques d'Intégration Multimédia, je suis devenu un intégrateur multimédia aguerri et j'ai ainsi découvert ma passion pour le développement web et le design graphique ainsi que pour la programmation. " : ($_GET["lang"] == "en" ? "Thanks to my education in Multimedia Integration Technics, I became a well experienced multimedia integrator and discovered my passion for web development and graphic design as well as for programming." : ""); ?>
 				</p>
         		<p>
 					<?php echo $_GET["lang"] == "fr" ? "Ceci est mon portfolio, que j'ai programmé moi-même, grâce à mes connaissances dans les différents langages de programmation. Il est composé d'une bonne dose de HTML, de CSS et de JavaScript, avec une bonne dose de PHP, le tout donnant un site web dynamique, adapté aux différentes plateformes et au dernières saveurs du design web. Lancez-vous dedans maintenant en cliquant sur l'un des liens ci-dessous ou en utilisant le menu dans le coin supérieur droit." : ($_GET["lang"] == "en" ? "Here you can see my portfolio, which I programmed myself using my knowledge in different programming languages. It is a mix of HTML, CSS and JavaScript, with a dose of PHP, resulting in a dynamic, responsive website at the edge of the latest web design trends. Jump in now by clicking one of the following links or by using the menu in the top-right corner." : ""); ?>
         		</p>
+				<p>
+					<?php echo $_GET["lang"] == "fr" ? "Pour être au courant de mes nouveaux projets, " : ($_GET["lang"] == "en" ? "To be up to date on my new projects, " : ""); ?>
+					<a href="https://www.behance.net/benoitlord98" class="bouton nouvelonglet" target="_blank"><?php echo $_GET["lang"] == "fr" ? "suivez-moi sur Behance!" : ($_GET["lang"] == "en" ? "follow me on Behance!" : ""); ?> <i class="fa fa-chevron-right fleche"></i></a>
+				</p>
        		</div>
        		
        		<!-- Partie droite -->

@@ -106,6 +106,7 @@
         <!-- Réseaux sociaux et CV -->
         <h2 style="clear: both;"><?php echo $_GET["lang"] == "fr" ? "Réseaux sociaux et C.V." : ($_GET["lang"] == "en" ? "Social Media and C.V." : ""); ?></h2>
 		<p><?php echo $_GET["lang"] == "fr" ? "Vous pouvez aussi visiter mes réseaux sociaux ou encore télécharger mon CV ici." : ($_GET["lang"] == "en" ? "You can also visit my social media or download my C.V. here." : ""); ?></p>
+		<a href="https://www.behance.net/benoitlord98" class="nouvelonglet" target="_blank"><i class="fa fa-behance-square fa-3x social"></i></a>
 		<a href="https://www.facebook.com/tiben234" class="nouvelonglet" target="_blank"><i class="fa fa-facebook-square fa-3x social"></i></a>
 		<a href="http://www.linkedin.com/in/benoit-l-28280a10b" class="nouvelonglet" target="_blank"><i class="fa fa-linkedin-square fa-3x social"></i></a>
 		<a href="https://twitter.com/tiben234" class="nouvelonglet" target="_blank"><i class="fa fa-twitter-square fa-3x social"></i></a>
