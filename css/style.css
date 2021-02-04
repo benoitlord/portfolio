@@ -1572,6 +1572,68 @@ footer {
       margin-left: 15px; }
     .projet img.phone {
       display: block; } }
+.msg {
+  position: fixed;
+  right: 100px;
+  top: 20px;
+  background-color: #68b32d;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  border-bottom: 5px solid #dddddd;
+  overflow: hidden;
+  height: 32px;
+  width: 32px;
+  padding: 20px; }
+  .msg.ouvert {
+    width: 400px;
+    height: 400px;
+    overflow-y: scroll;
+    background: #ddd;
+    border: none; }
+  .msg .bouton-msg {
+    color: #000000;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease; }
+    .msg .bouton-msg:hover {
+      color: #dddddd; }
+  .msg.ouvert .bouton-msg:hover {
+    color: #68b32d; }
+  .msg h2, .msg h3 {
+    font-family: roboto;
+    border: none;
+    color: black; }
+  .msg h2 {
+    font-size: 24px; }
+  .msg p {
+    font-size: 16px; }
+  .msg textarea {
+    background: #bbb;
+    border: none; }
+  .msg input[type="submit"] {
+    background: #68b32d;
+    appearance: none;
+    border: none;
+    padding: 10px;
+    color: #ddd;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease; }
+    .msg input[type="submit"]:hover {
+      background: #499010; }
+
+.changements {
+  padding-bottom: 20px; }
+  .changements h2 {
+    color: black;
+    font-family: Roboto;
+    font-size: 20px;
+    border-bottom: none; }
+
 /* Style pour ordinateur */
 @media screen and (min-width: 1367px) {
   /* Mise en forme du texte */
@@ -1630,6 +1692,9 @@ footer {
     background-color: #aaaaaa; }
     .call-to-action.fonce-tablet .haut {
       background-color: #000000; }
+
+  .call-to-action2 h2 {
+    font-size: 26px; }
 
   /* Pour afficher la bonne image dans les header (bonne r├®solution) */
   header {
@@ -1768,12 +1833,17 @@ footer {
       background-color: #000000; }
 
   .call-to-action2 {
-    width: 80%;
-    padding: 10%;
+    width: 100%;
     height: 350px;
     margin-left: 0px !important; }
     .call-to-action2 h2 {
       border: none; }
+    .call-to-action2 .haut {
+      width: 80%;
+      padding: 10px 10%; }
+    .call-to-action2 .bas {
+      padding: 10px 10% 30px 10%;
+      width: 80%; }
 
   /* Pour cacher la partie droite du footer sur t├®l├®phone (pas assez d'espace) */
   footer .droite {
@@ -1850,3 +1920,5 @@ footer {
       float: none;
       width: 300px;
       display: block; } }
+
+/*# sourceMappingURL=style.css.map */
